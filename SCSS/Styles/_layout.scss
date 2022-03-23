@@ -419,7 +419,18 @@ body {
             opacity: 0.8;
         }
     }
+
+
+    &Extra {
+        @include gridContainerMixin(4, auto, auto, auto);
+        margin-top: 100px;
+
+        &Single:last-of-type {
+          margin-top: 25px;
+        }
+    }
 }
+
 
 
 

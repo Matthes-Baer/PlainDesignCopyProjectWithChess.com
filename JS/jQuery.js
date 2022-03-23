@@ -8,10 +8,13 @@ $(function() {
     });
 
     $('body').on("mouseover", function() {
-        if (document.body.scrollWidth >= 960) {
-        mediaQueryFunction();
-        }
-    })
+        
+            if (document.body.scrollWidth >= 960) {
+                mediaQueryFunction();
+                }
+        
+        
+    });
 
     function mediaQueryFunction(){
         $('.asideFlexContainer').css('display', 'block');

@@ -234,9 +234,16 @@ h1 {
 #sectionFourthH2 {
 margin-left: 3.15rem;
 }
+
 .footer {
     &CentralGeneralContainer {
         margin-left: 3.15rem;
+    }
+
+    &Extra {
+        
+        margin-left: 3.15rem;
+        
     }
 }
 }
@@ -435,6 +442,16 @@ margin-left: 3.15rem;
     .footer {
         &CentralGeneralContainer {
             margin-left: 0;
+        }
+
+        
+          
+        
+            &Extra {
+               
+                margin-left: 0;
+                
+            
         }
     }
 
@@ -655,6 +672,18 @@ margin-left: 3.15rem;
     #sectionFourthH2 {
         margin-top: 150px;
     }
+
+
+
+    .footer {
+        &Extra {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(auto, auto);
+            
+        
+    }
+    }
 }
 
 
@@ -850,6 +879,18 @@ margin-left: 3.15rem;
 
 #sectionFourthH2 {
     margin-top: 50px;
+}
+
+.footer {
+    &Extra {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(auto, auto);
+        justify-content: center;
+        align-items: center;
+        
+    
+}
 }
 }
 
