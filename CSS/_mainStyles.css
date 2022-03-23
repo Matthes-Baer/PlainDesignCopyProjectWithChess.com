@@ -1,0 +1,596 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.button_1 {
+  width: 4%;
+  background-color: #383634;
+  height: 20px;
+}
+
+.button_2 {
+  width: 8%;
+  background-color: #383634;
+  height: 40px;
+}
+
+.button_3 {
+  width: 12%;
+  background-color: #383634;
+  height: 60px;
+}
+
+.asideButton, .asideButtonGrey, .asideButtonGreen {
+  height: 2.5rem;
+  -webkit-border-radius: 0.35rem;
+  border-radius: 0.35rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 7rem;
+  cursor: pointer;
+}
+
+.sectionTopRightPartButton, .sectionTopRightPartGreenButton, .sectionTopRightPartGreyButton, .sectionSecondLeftPartGreenButton, .sectionThirdRightPartGreenButton, .sectionFourthButtonContainer {
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+body {
+  background-color: #312e2b;
+  margin: 0;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  width: 400px;
+  transition: all 0.1s;
+}
+
+input:focus {
+  outline: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sectionHorizontalFlexContainer {
+  font-size: 0.8rem;
+}
+
+#openAsideBar {
+  margin-right: -1rem;
+}
+
+#closeAsideBar {
+  display: none;
+}
+
+.asideSmallMediaQuery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  display: none;
+}
+.asideSmallMediaQueryIconSpecialFont {
+  margin-left: -1rem;
+  color: white;
+}
+.asideClosingSymbol {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+.asideFlexContainer {
+  background-color: #272522;
+}
+.asideTextClass {
+  color: #a5a4a3;
+  font-size: 0.8rem;
+  margin-left: 6.5%;
+}
+.asideTextClassSpecial {
+  color: white;
+  font-size: 1.4rem;
+  margin-left: -1rem;
+}
+.asideTextClassSpecial span {
+  font-size: 60%;
+}
+.asideSingleDivContainer:hover {
+  background-color: #22211f;
+  cursor: pointer;
+}
+.asideSingleDivContainer:hover > p {
+  color: white;
+}
+.asideSingleDivContainerHover {
+  visibility: hidden;
+  background-color: #22211f;
+  transition-delay: 0.15s;
+}
+.asideSingleDivContainer:hover .asideSingleDivContainerHover {
+  visibility: visible;
+}
+.asideSingleDivContainerNext:hover:not(.asideStreamersAndEvents) {
+  background-color: #1d1c1c;
+}
+.asideSingleDivContainerNext:hover > p {
+  color: white;
+}
+.asideIcons {
+  width: 2rem;
+  height: 2rem;
+}
+.asideIconsNext {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-left: 5%;
+}
+.asideIconsSpecial {
+  width: 2rem;
+  height: 2rem;
+}
+.asideStreamersAndEvents {
+  background-color: #312e2b;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.asideStreamersAndEvents:hover .asideTodaySpecialIcons {
+  opacity: 1;
+}
+.asidePlayingNow {
+  background-color: #312e2b;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  pointer-events: none;
+}
+.asideTodaySpecialIcons {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 5%;
+  margin-left: auto;
+  opacity: 0.75;
+}
+.asideTodayRating {
+  color: #a5a4a3;
+  opacity: 0.75;
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+}
+.asideGMIcon {
+  width: 1.25rem;
+  height: 0.9rem;
+  margin-left: 5%;
+}
+.asidePlayerName {
+  margin-left: 2.5%;
+}
+.asideSearchBar {
+  background-color: #3d3b39;
+  width: 7.75rem;
+  min-height: 2rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.15);
+  border: 0.5px solid #3d3b39;
+  margin-top: 3.5%;
+  padding: 0 0.5rem 0 0.5rem;
+}
+.asideSearchBar:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.15);
+}
+.asideSearchBarMediaQueryElement {
+  width: 100%;
+  height: 2.9rem;
+  display: none;
+}
+.asideSearchBarMediaQueryElement > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.asideSearchBarMediaQueryElement > div > img {
+  width: 50%;
+  height: 50%;
+}
+.asideSearchBarMediaQueryElement:hover {
+  background-color: #22211f;
+  color: white;
+  cursor: pointer;
+}
+.asideButtonGrey {
+  background-color: #383634;
+  border: 0.1px solid #383634;
+  color: #babab9;
+  font-size: 0.8rem;
+  margin-top: 1.25rem;
+  transition: all 0.1s;
+}
+.asideButtonGreyMediaQueryElement {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: #383634;
+  border-radius: 0.35rem;
+  margin-top: 0.65rem;
+  transition: all 0.1s;
+}
+.asideButtonGreyMediaQueryElement > div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.asideButtonGreyMediaQueryElement > div > img {
+  width: 60%;
+  height: 60%;
+  opacity: 0.5;
+}
+.asideButtonGreyMediaQueryElement:hover {
+  background-color: #4a4846;
+  cursor: pointer;
+}
+.asideButtonGreyMediaQueryElement:hover.asideButtonGreyMediaQueryElement img {
+  opacity: 1;
+  cursor: pointer;
+}
+.asideButtonGreen {
+  color: white;
+  background-color: #7fa650;
+  border: 0.1px solid #7fa650;
+  font-size: 0.8rem;
+  margin-top: 0.65rem;
+  transition: all 0.1s;
+}
+.asideButtonGreenMediaQueryElement {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: #7fa650;
+  border-radius: 0.35rem;
+  margin-top: 0.65rem;
+  transition: all 0.1s;
+}
+.asideButtonGreenMediaQueryElement > div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.asideButtonGreenMediaQueryElement > div > img {
+  width: 60%;
+  height: 60%;
+}
+.asideButtonGreenMediaQueryElement:hover {
+  background-color: #95bb4a;
+  cursor: pointer;
+}
+.asideButtonGrey:hover {
+  background-color: #4a4846;
+  color: white;
+}
+.asideButtonGreen:hover {
+  background-color: #95bb4a;
+  color: white;
+}
+.asideRestContainerEnglishAndHelp {
+  transition: all 0.1s;
+}
+.asideRestContainerEnglishAndHelp > .asideIcons {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.asideRestContainerEnglishAndHelp > .asideTextClass {
+  font-size: 0.75rem;
+  opacity: 0.35;
+  padding-left: 0.35rem;
+  color: white;
+}
+.asideRestContainerEnglishAndHelp:hover.asideRestContainerEnglishAndHelp > .asideTextClass {
+  opacity: 1;
+  cursor: pointer;
+}
+.asideRestContainerEnglishAndHelp:hover {
+  background-color: #22211f;
+  cursor: pointer;
+}
+.asideRestContainerHelpHoverPositionContainer {
+  background-color: #1b1a18;
+  transition: all 0.5s;
+}
+.asideRestContainerHelpHoverElement {
+  padding: 15px;
+}
+.asideRestContainerHelpHoverElement > p {
+  font-size: 0.75rem;
+  color: #a5a4a3;
+  text-align: center;
+  margin-left: 10px;
+}
+.asideRestContainerHelpHoverElement > img {
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+}
+.asideRestContainerHelpHoverElement:hover {
+  background-color: #494846;
+}
+.asideRestContainerHelpHoverElement:hover p {
+  color: white;
+}
+
+.sectionTopRightPartGreenButton, .sectionFourthButtonContainer, .sectionThirdRightPartGreenButton, .sectionSecondLeftPartGreenButton {
+  background-color: #7fa650;
+  box-shadow: 0px 5px 0 0 #537133;
+  margin-bottom: 2rem;
+  margin-top: -2.5rem;
+  width: 425px;
+  transition: width 0.5s;
+  z-index: 1;
+  min-width: 210px;
+}
+.sectionTopRightPartGreenButton .sectionTopRightPartVertical div:first-of-type, .sectionFourthButtonContainer .sectionTopRightPartVertical div:first-of-type, .sectionThirdRightPartGreenButton .sectionTopRightPartVertical div:first-of-type, .sectionSecondLeftPartGreenButton .sectionTopRightPartVertical div:first-of-type {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.sectionTopRightPartGreenButton .sectionTopRightPartVertical div:last-of-type, .sectionFourthButtonContainer .sectionTopRightPartVertical div:last-of-type, .sectionThirdRightPartGreenButton .sectionTopRightPartVertical div:last-of-type, .sectionSecondLeftPartGreenButton .sectionTopRightPartVertical div:last-of-type {
+  font-size: 0.75rem;
+  color: white;
+}
+.sectionTopRightPartGreenButton:hover, .sectionFourthButtonContainer:hover, .sectionThirdRightPartGreenButton:hover, .sectionSecondLeftPartGreenButton:hover {
+  background-color: #95bb4a;
+  box-shadow: 0px 5px 0 0 #537133, 0 7.5px 12.5px 0 #537133;
+}
+.sectionTopRightPartGreyButton {
+  background-color: #413e3c;
+  box-shadow: 0px 5px 0 0 #3b3936;
+  width: 425px;
+  transition: width 0.5s;
+  z-index: 1;
+  min-width: 210px;
+}
+.sectionTopRightPartGreyButton .sectionTopRightPartVertical div:first-of-type {
+  font-size: 1.5rem;
+  color: #babab9;
+  margin-bottom: 0.5rem;
+  transition: all 0.1s;
+}
+.sectionTopRightPartGreyButton .sectionTopRightPartVertical div:last-of-type {
+  font-size: 0.75rem;
+  color: #babab9;
+  transition: all 0.1s;
+}
+.sectionTopRightPartGreyButton:hover {
+  background-color: #52504d;
+}
+.sectionTopRightPartGreyButton:hover .sectionTopRightPartVertical div {
+  color: white;
+}
+.sectionTopRightPartFont {
+  color: rgba(186, 186, 185, 0.45);
+}
+.sectionTopRightPartFont span {
+  color: white;
+}
+.sectionSecondLeftPartGreenButton {
+  margin: 0;
+  width: 200px;
+}
+.sectionSecondLeftPartGreenButton > div {
+  color: white;
+  padding: 15px;
+  font-size: 1.4rem;
+}
+.sectionSecondLeftPartFontFirst {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  width: 30vw;
+  max-width: 400px;
+  margin-top: 15px;
+  height: 100px;
+}
+.sectionSecondLeftPartFontSecond {
+  font-size: 0.95rem;
+  color: #9eaaa6;
+}
+.sectionSecondLeftPartFontThird {
+  font-size: 1rem;
+  color: #b3b3b2;
+  margin-left: 2.5%;
+}
+.sectionSecondLeftPartFontButton {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.sectionSecondLeftPartQuote {
+  width: 300px;
+}
+.sectionSecondLeftPartQuoteImage {
+  min-width: 100px;
+  min-height: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-self: center;
+}
+.sectionSecondLeftPartQuoteImage > img {
+  border-radius: 0.25rem;
+  width: 150px;
+  height: 150px;
+}
+.sectionSecondLeftPartQuoteName {
+  margin-top: 5%;
+}
+.sectionSecondRightPart img {
+  min-width: 200px;
+  min-height: 200px;
+}
+.sectionThirdRightPartGreenButton {
+  margin: 0;
+  width: 200px;
+}
+.sectionThirdRightPartGreenButton > div {
+  color: white;
+  padding: 15px;
+  font-size: 1.4rem;
+}
+.sectionThirdRightPartFontFirst {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  width: 30vw;
+  max-width: 400px;
+  margin-top: 15px;
+  height: 100px;
+}
+.sectionThirdRightPartFontSecond {
+  font-size: 0.95rem;
+  color: #9eaaa6;
+}
+.sectionThirdRightPartFontThird {
+  font-size: 1rem;
+  color: #b3b3b2;
+  margin-left: 2.5%;
+}
+.sectionThirdRightPartFontButton {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.sectionThirdRightPartQuote {
+  width: 300px;
+}
+.sectionThirdRightPartQuoteImage {
+  min-width: 100px;
+  min-height: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-self: center;
+}
+.sectionThirdRightPartQuoteImage > img {
+  border-radius: 0.25rem;
+  width: 150px;
+  height: 150px;
+}
+.sectionThirdRightPartQuoteName {
+  margin-top: 5%;
+}
+.sectionThirdLeftPart img {
+  min-width: 200px;
+  min-height: 200px;
+}
+.sectionFourthVerticalContainer > a {
+  transition: all 0.1s;
+}
+.sectionFourthVerticalContainer > a:hover {
+  opacity: 0.75;
+}
+.sectionFourthVerticalContainer > a:hover + div {
+  opacity: 0.75;
+}
+.sectionFourthButtonContainer {
+  width: 200px;
+}
+.sectionFourthButtonFont {
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  padding: 15px;
+  font-size: 1.4rem;
+}
+
+#sectionFourthH2 {
+  width: auto;
+  margin-left: 9rem;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  transition: all 0.1s;
+  z-index: 9000;
+}
+#sectionFourthH2 a {
+  transition: all 0.1s;
+}
+#sectionFourthH2 a:active {
+  color: white;
+}
+#sectionFourthH2 a:visited {
+  color: white;
+}
+#sectionFourthH2 a:hover {
+  opacity: 0.75;
+}
+
+.chessBoardGreenChessField {
+  background-color: #779556;
+}
+.chessBoardGreenChessField:nth-child(8) {
+  border-radius: 0px 5px 0px 0px;
+}
+.chessBoardGreenChessField:nth-child(57) {
+  border-radius: 0px 0px 0px 5px;
+}
+.chessBoardWhiteChessField {
+  background-color: #ebecd0;
+}
+.chessBoardWhiteChessField:nth-child(1) {
+  border-radius: 5px 0px 0px 0px;
+}
+.chessBoardWhiteChessField:nth-child(64) {
+  border-radius: 0px 0px 5px 0px;
+}
+.chessBoardIcons {
+  width: 80%;
+  height: 80%;
+}
+
+.footerElementContainer {
+  width: auto;
+  color: #959593;
+  font-size: 0.675rem;
+  cursor: pointer;
+}
+.footerElementContainer:hover {
+  color: #d3d3d4;
+}
+.footerElementContainerAfter::after {
+  color: #959593;
+  content: "|";
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}

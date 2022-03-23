@@ -1,0 +1,1429 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.button_1 {
+  width: 4%;
+  background-color: #383634;
+  height: 20px;
+}
+
+.button_2 {
+  width: 8%;
+  background-color: #383634;
+  height: 40px;
+}
+
+.button_3 {
+  width: 12%;
+  background-color: #383634;
+  height: 60px;
+}
+
+.asideButton, .asideButtonGrey, .asideButtonGreen {
+  height: 2.5rem;
+  -webkit-border-radius: 0.35rem;
+  border-radius: 0.35rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 7rem;
+  cursor: pointer;
+}
+
+.sectionTopRightPartButton, .sectionTopRightPartGreenButton, .sectionTopRightPartGreyButton, .sectionSecondLeftPartGreenButton, .sectionThirdRightPartGreenButton, .sectionFourthButtonContainer {
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.asideFlexContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 9rem;
+  height: 100%;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-right: 10rem;
+  transition: all 0.1s;
+  z-index: 9000;
+}
+.asideSingleDivContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 2.9rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+.asideSingleDivContainer:first-of-type {
+  margin-top: 0.5rem;
+}
+.asideSingleDivContainerHover {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 21.5rem;
+  height: 100%;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 9rem;
+  transition: all 0.1s;
+}
+.asideSingleDivContainerNext {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 21rem;
+  height: auto;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.asideRestContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+.asideRestContainer:last-of-type {
+  position: absolute;
+  bottom: 2.5%;
+  z-index: -1;
+}
+.asideRestContainerEnglishAndHelp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 9rem;
+  height: 2rem;
+  padding: 0rem 0.5rem 0rem 1rem;
+  transition: all 0.1s;
+}
+.asideRestContainerHelpHoverPositionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 175px;
+  display: none;
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  border-radius: 10px;
+}
+.asideRestContainerHelpHoverElementsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 175px;
+  flex-direction: column;
+}
+.asideRestContainerHelpHoverElement {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 25px;
+}
+
+#asideHelp:hover .asideRestContainerHelpHoverPositionContainer {
+  display: block;
+}
+#asideHelp > img {
+  opacity: 0.5;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sectionContainer {
+  display: grid;
+  justify-content: center;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(auto, auto);
+  margin-left: 9rem;
+}
+.sectionTopLeftPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 505px;
+  height: auto;
+  margin-top: 1%;
+}
+.sectionTopRightPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 495px;
+  height: auto;
+  flex-direction: column;
+  margin-left: 50px;
+  transition: all 0.5s;
+}
+.sectionTopRightPartHorizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100px;
+}
+.sectionTopRightPartHorizontal .sectionTopRightPartFont {
+  width: 200px;
+  margin-top: -90px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.sectionTopRightPartHorizontal .sectionTopRightPartFont:nth-of-type(2) {
+  margin-left: 40px;
+}
+.sectionTopRightPartVertical {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 18.75rem;
+  height: auto;
+  flex-direction: column;
+}
+.sectionTopRightPartButtonIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.25rem;
+  height: auto;
+}
+.sectionSecondLeftPart {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 575px;
+  height: 500px;
+  flex-direction: column;
+  background-color: #272522;
+  margin-top: 3.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  transition: all 0.1s;
+}
+.sectionSecondLeftPartCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.sectionSecondLeftPartCentral:nth-of-type(2) {
+  margin-bottom: 100px;
+}
+.sectionSecondLeftPartHorizontal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+}
+.sectionSecondLeftPartVertical {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+.sectionSecondLeftPartBottom {
+  margin-bottom: 12.5px;
+}
+.sectionSecondRightPart {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 475px;
+  height: 500px;
+  flex-direction: column;
+  background-color: #272522;
+  margin-top: 3.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  transition: all 0.1s;
+}
+.sectionSecondRightPartCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.sectionThirdLeftPart {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 475px;
+  height: 500px;
+  flex-direction: column;
+  background-color: #272522;
+  margin-top: 3.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  transition: all 0.5s;
+}
+.sectionThirdLeftPartCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-left: 12.5px;
+}
+.sectionThirdRightPart {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 575px;
+  height: 500px;
+  flex-direction: column;
+  background-color: #272522;
+  margin-top: 3.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  transition: all 0.5s;
+}
+.sectionThirdRightPartCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.sectionThirdRightPartCentral:nth-of-type(2) {
+  margin-bottom: 90px;
+}
+.sectionThirdRightPartHorizontal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+}
+.sectionThirdRightPartVertical {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+.sectionThirdRightPartBottom {
+  margin-bottom: 12.5px;
+}
+.sectionFourthVerticalContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 525px;
+  height: 400px;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.sectionFourthVerticalContainer > div {
+  color: white;
+  width: 75%;
+  text-align: center;
+}
+.sectionFourthVerticalContainer p {
+  color: #a5a4a3;
+  font-size: 0.8rem;
+}
+.sectionFourthCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.sectionFourthCentral > img {
+  transform: scale(0.5);
+  margin-right: -10px;
+}
+.sectionFourthContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.sectionFourthButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-left: 9rem;
+}
+
+.chessBoardGridContainer {
+  display: grid;
+  grid-template-columns: repeat(8, 63.125px);
+  grid-template-rows: repeat(8, 63.125px);
+  transition: all 0.5s;
+}
+.chessBoardWhiteChessField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.chessBoardGreenChessField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.footerCentralGeneralContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-left: 9rem;
+  flex-direction: column;
+}
+.footerCentralContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  flex-wrap: wrap;
+}
+.footerElementContainer {
+  width: auto;
+  color: #959593;
+  font-size: 0.675rem;
+}
+.footerElementContainer:hover {
+  color: #d3d3d4;
+  cursor: pointer;
+}
+.footerElementContainerAfter::after {
+  color: #959593;
+  content: "|";
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.footerImageElementContainer {
+  width: auto;
+  height: auto;
+  margin-right: 5px;
+}
+.footerImageElementContainer > img {
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+  transition: all 0.1s;
+}
+.footerImageElementContainer > img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+body {
+  background-color: #312e2b;
+  margin: 0;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  width: 400px;
+  transition: all 0.1s;
+}
+
+input:focus {
+  outline: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sectionHorizontalFlexContainer {
+  font-size: 0.8rem;
+}
+
+#openAsideBar {
+  margin-right: -1rem;
+}
+
+#closeAsideBar {
+  display: none;
+}
+
+.asideSmallMediaQuery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  display: none;
+}
+.asideSmallMediaQueryIconSpecialFont {
+  margin-left: -1rem;
+  color: white;
+}
+.asideClosingSymbol {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+.asideFlexContainer {
+  background-color: #272522;
+}
+.asideTextClass {
+  color: #a5a4a3;
+  font-size: 0.8rem;
+  margin-left: 6.5%;
+}
+.asideTextClassSpecial {
+  color: white;
+  font-size: 1.4rem;
+  margin-left: -1rem;
+}
+.asideTextClassSpecial span {
+  font-size: 60%;
+}
+.asideSingleDivContainer:hover {
+  background-color: #22211f;
+  cursor: pointer;
+}
+.asideSingleDivContainer:hover > p {
+  color: white;
+}
+.asideSingleDivContainerHover {
+  visibility: hidden;
+  background-color: #22211f;
+  transition-delay: 0.15s;
+}
+.asideSingleDivContainer:hover .asideSingleDivContainerHover {
+  visibility: visible;
+}
+.asideSingleDivContainerNext:hover:not(.asideStreamersAndEvents) {
+  background-color: #1d1c1c;
+}
+.asideSingleDivContainerNext:hover > p {
+  color: white;
+}
+.asideIcons {
+  width: 2rem;
+  height: 2rem;
+}
+.asideIconsNext {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-left: 5%;
+}
+.asideIconsSpecial {
+  width: 2rem;
+  height: 2rem;
+}
+.asideStreamersAndEvents {
+  background-color: #312e2b;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.asideStreamersAndEvents:hover .asideTodaySpecialIcons {
+  opacity: 1;
+}
+.asidePlayingNow {
+  background-color: #312e2b;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  pointer-events: none;
+}
+.asideTodaySpecialIcons {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 5%;
+  margin-left: auto;
+  opacity: 0.75;
+}
+.asideTodayRating {
+  color: #a5a4a3;
+  opacity: 0.75;
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+}
+.asideGMIcon {
+  width: 1.25rem;
+  height: 0.9rem;
+  margin-left: 5%;
+}
+.asidePlayerName {
+  margin-left: 2.5%;
+}
+.asideSearchBar {
+  background-color: #3d3b39;
+  width: 7.75rem;
+  min-height: 2rem;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.15);
+  border: 0.5px solid #3d3b39;
+  margin-top: 3.5%;
+  padding: 0 0.5rem 0 0.5rem;
+}
+.asideSearchBar:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.15);
+}
+.asideSearchBarMediaQueryElement {
+  width: 3.15rem;
+  height: 2.9rem;
+  display: none;
+}
+.asideSearchBarMediaQueryElement > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.asideSearchBarMediaQueryElement > div > img {
+  width: 50%;
+  height: 50%;
+}
+.asideSearchBarMediaQueryElement:hover {
+  background-color: #22211f;
+  color: white;
+  cursor: pointer;
+}
+.asideButtonGrey {
+  background-color: #383634;
+  border: 0.1px solid #383634;
+  color: #babab9;
+  font-size: 0.8rem;
+  margin-top: 1.25rem;
+  transition: all 0.1s;
+}
+.asideButtonGreyMediaQueryElement {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: #383634;
+  border-radius: 0.35rem;
+  margin-top: 0.65rem;
+  transition: all 0.1s;
+}
+.asideButtonGreyMediaQueryElement > div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.asideButtonGreyMediaQueryElement > div > img {
+  width: 60%;
+  height: 60%;
+  opacity: 0.5;
+}
+.asideButtonGreyMediaQueryElement:hover {
+  background-color: #4a4846;
+  cursor: pointer;
+}
+.asideButtonGreyMediaQueryElement:hover.asideButtonGreyMediaQueryElement img {
+  opacity: 1;
+  cursor: pointer;
+}
+.asideButtonGreen {
+  color: white;
+  background-color: #7fa650;
+  border: 0.1px solid #7fa650;
+  font-size: 0.8rem;
+  margin-top: 0.65rem;
+  transition: all 0.1s;
+}
+.asideButtonGreenMediaQueryElement {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: #7fa650;
+  border-radius: 0.35rem;
+  margin-top: 0.65rem;
+  transition: all 0.1s;
+}
+.asideButtonGreenMediaQueryElement > div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.asideButtonGreenMediaQueryElement > div > img {
+  width: 60%;
+  height: 60%;
+}
+.asideButtonGreenMediaQueryElement:hover {
+  background-color: #95bb4a;
+  cursor: pointer;
+}
+.asideButtonGrey:hover {
+  background-color: #4a4846;
+  color: white;
+}
+.asideButtonGreen:hover {
+  background-color: #95bb4a;
+  color: white;
+}
+.asideRestContainerEnglishAndHelp {
+  transition: all 0.1s;
+}
+.asideRestContainerEnglishAndHelp > .asideIcons {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.asideRestContainerEnglishAndHelp > .asideTextClass {
+  font-size: 0.75rem;
+  opacity: 0.35;
+  padding-left: 0.35rem;
+  color: white;
+}
+.asideRestContainerEnglishAndHelp:hover.asideRestContainerEnglishAndHelp > .asideTextClass {
+  opacity: 1;
+  cursor: pointer;
+}
+.asideRestContainerEnglishAndHelp:hover {
+  background-color: #22211f;
+  cursor: pointer;
+}
+.asideRestContainerHelpHoverPositionContainer {
+  background-color: #1b1a18;
+  transition: all 0.5s;
+}
+.asideRestContainerHelpHoverElement {
+  padding: 15px;
+}
+.asideRestContainerHelpHoverElement > p {
+  font-size: 0.75rem;
+  color: #a5a4a3;
+  text-align: center;
+  margin-left: 10px;
+}
+.asideRestContainerHelpHoverElement > img {
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+}
+.asideRestContainerHelpHoverElement:hover {
+  background-color: #494846;
+}
+.asideRestContainerHelpHoverElement:hover p {
+  color: white;
+}
+
+.sectionTopRightPartGreenButton, .sectionFourthButtonContainer, .sectionThirdRightPartGreenButton, .sectionSecondLeftPartGreenButton {
+  background-color: #7fa650;
+  box-shadow: 0px 5px 0 0 #537133;
+  margin-bottom: 2rem;
+  margin-top: -2.5rem;
+  width: 425px;
+  transition: width 0.5s;
+  z-index: 1;
+  min-width: 210px;
+}
+.sectionTopRightPartGreenButton .sectionTopRightPartVertical div:first-of-type, .sectionFourthButtonContainer .sectionTopRightPartVertical div:first-of-type, .sectionThirdRightPartGreenButton .sectionTopRightPartVertical div:first-of-type, .sectionSecondLeftPartGreenButton .sectionTopRightPartVertical div:first-of-type {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.sectionTopRightPartGreenButton .sectionTopRightPartVertical div:last-of-type, .sectionFourthButtonContainer .sectionTopRightPartVertical div:last-of-type, .sectionThirdRightPartGreenButton .sectionTopRightPartVertical div:last-of-type, .sectionSecondLeftPartGreenButton .sectionTopRightPartVertical div:last-of-type {
+  font-size: 0.75rem;
+  color: white;
+}
+.sectionTopRightPartGreenButton:hover, .sectionFourthButtonContainer:hover, .sectionThirdRightPartGreenButton:hover, .sectionSecondLeftPartGreenButton:hover {
+  background-color: #95bb4a;
+  box-shadow: 0px 5px 0 0 #537133, 0 7.5px 12.5px 0 #537133;
+}
+.sectionTopRightPartGreyButton {
+  background-color: #413e3c;
+  box-shadow: 0px 5px 0 0 #3b3936;
+  width: 425px;
+  transition: width 0.5s;
+  z-index: 1;
+  min-width: 210px;
+}
+.sectionTopRightPartGreyButton .sectionTopRightPartVertical div:first-of-type {
+  font-size: 1.5rem;
+  color: #babab9;
+  margin-bottom: 0.5rem;
+  transition: all 0.1s;
+}
+.sectionTopRightPartGreyButton .sectionTopRightPartVertical div:last-of-type {
+  font-size: 0.75rem;
+  color: #babab9;
+  transition: all 0.1s;
+}
+.sectionTopRightPartGreyButton:hover {
+  background-color: #52504d;
+}
+.sectionTopRightPartGreyButton:hover .sectionTopRightPartVertical div {
+  color: white;
+}
+.sectionTopRightPartFont {
+  color: rgba(186, 186, 185, 0.45);
+}
+.sectionTopRightPartFont:first-of-type {
+  margin-left: 12.5px;
+}
+.sectionTopRightPartFont span {
+  color: white;
+}
+.sectionSecondLeftPartGreenButton {
+  margin: 0;
+  width: 200px;
+}
+.sectionSecondLeftPartGreenButton > div {
+  color: white;
+  padding: 15px;
+  font-size: 1.4rem;
+}
+.sectionSecondLeftPartFontFirst {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  width: 30vw;
+  max-width: 400px;
+  margin-top: 15px;
+  height: 100px;
+}
+.sectionSecondLeftPartFontSecond {
+  font-size: 0.95rem;
+  color: #9eaaa6;
+}
+.sectionSecondLeftPartFontThird {
+  font-size: 1rem;
+  color: #b3b3b2;
+  margin-left: 2.5%;
+}
+.sectionSecondLeftPartFontButton {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.sectionSecondLeftPartQuote {
+  width: 300px;
+}
+.sectionSecondLeftPartQuoteImage {
+  margin-left: 50px;
+  margin-right: 50px;
+  align-self: center;
+}
+.sectionSecondLeftPartQuoteImage > img {
+  border-radius: 0.25rem;
+  width: 150px;
+  height: 150px;
+}
+.sectionSecondLeftPartQuoteName {
+  margin-top: 5%;
+}
+.sectionSecondRightPart img {
+  min-width: 200px;
+  min-height: 200px;
+}
+.sectionThirdRightPartGreenButton {
+  margin: 0;
+  width: 200px;
+}
+.sectionThirdRightPartGreenButton > div {
+  color: white;
+  padding: 15px;
+  font-size: 1.4rem;
+}
+.sectionThirdRightPartFontFirst {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  width: 30vw;
+  max-width: 400px;
+  margin-top: 15px;
+  height: 100px;
+}
+.sectionThirdRightPartFontSecond {
+  font-size: 0.95rem;
+  color: #9eaaa6;
+}
+.sectionThirdRightPartFontThird {
+  font-size: 1rem;
+  color: #b3b3b2;
+  margin-left: 2.5%;
+}
+.sectionThirdRightPartFontButton {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.sectionThirdRightPartQuote {
+  width: 300px;
+}
+.sectionThirdRightPartQuoteImage {
+  margin-left: 50px;
+  margin-right: 50px;
+  align-self: center;
+}
+.sectionThirdRightPartQuoteImage > img {
+  border-radius: 0.25rem;
+  width: 150px;
+  height: 150px;
+}
+.sectionThirdRightPartQuoteName {
+  margin-top: 5%;
+}
+.sectionThirdLeftPart img {
+  min-width: 200px;
+  min-height: 200px;
+}
+.sectionFourthVerticalContainer > a {
+  transition: all 0.1s;
+}
+.sectionFourthVerticalContainer > a:hover {
+  opacity: 0.75;
+}
+.sectionFourthVerticalContainer > a:hover + div {
+  opacity: 0.75;
+}
+.sectionFourthButtonContainer {
+  width: 200px;
+}
+.sectionFourthButtonFont {
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  padding: 15px;
+  font-size: 1.4rem;
+}
+
+#sectionFourthH2 {
+  width: auto;
+  margin-left: 9rem;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  transition: all 0.1s;
+  z-index: 9000;
+}
+#sectionFourthH2 a {
+  transition: all 0.1s;
+}
+#sectionFourthH2 a:active {
+  color: white;
+}
+#sectionFourthH2 a:visited {
+  color: white;
+}
+#sectionFourthH2 a:hover {
+  opacity: 0.75;
+}
+
+.chessBoardGreenChessField {
+  background-color: #779556;
+}
+.chessBoardGreenChessField:nth-child(8) {
+  border-radius: 0px 5px 0px 0px;
+}
+.chessBoardGreenChessField:nth-child(57) {
+  border-radius: 0px 0px 0px 5px;
+}
+.chessBoardWhiteChessField {
+  background-color: #ebecd0;
+}
+.chessBoardWhiteChessField:nth-child(1) {
+  border-radius: 5px 0px 0px 0px;
+}
+.chessBoardWhiteChessField:nth-child(64) {
+  border-radius: 0px 0px 5px 0px;
+}
+.chessBoardIcons {
+  width: 80%;
+  height: 80%;
+}
+
+.footerElementContainer {
+  width: auto;
+  color: #959593;
+  font-size: 0.675rem;
+  cursor: pointer;
+}
+.footerElementContainer:hover {
+  color: #d3d3d4;
+}
+.footerElementContainerAfter::after {
+  color: #959593;
+  content: "|";
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#firstDiv, #secondDiv {
+  width: 37.5%;
+  height: 37.5%;
+  background-color: #272522;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1250px) {
+  .asideSingleDivContainer > .asideTextClass,
+.asideRestContainerEnglishAndHelp > .asideTextClass,
+.asideTextClassSpecial,
+.asideSearchBar,
+.asideButtonGrey,
+.asideButtonGreen {
+    display: none;
+  }
+
+  .asideSearchBarMediaQueryElement, .asideButtonGreyMediaQueryElement, .asideButtonGreenMediaQueryElement {
+    display: block;
+  }
+
+  h1 {
+    font-size: 3.84vw;
+  }
+
+  .asideFlexContainer {
+    display: block;
+    width: 3.15rem;
+  }
+  .asideRestContainerEnglishAndHelp {
+    width: 3.15rem;
+  }
+  .asideSingleDivContainerHover {
+    left: 3.15rem;
+  }
+
+  .sectionContainer {
+    margin-left: 3.15rem;
+  }
+  .sectionTopLeftPart {
+    width: 38.4vw;
+    min-width: calc(0.5 * 768px);
+  }
+  .sectionTopRightPart {
+    width: 37.6vw;
+    min-width: calc(0.5 * 768px);
+    margin-left: 4vw;
+  }
+  .sectionTopRightPartHorizontal .sectionTopRightPartFont {
+    width: 16vw;
+    min-width: 150px;
+    margin-top: -90px;
+  }
+  .sectionTopRightPartHorizontal .sectionTopRightPartFont:nth-of-type(2) {
+    margin-left: 3.2vw;
+  }
+  .sectionTopRightPartGreenButton {
+    width: 34vw;
+  }
+  .sectionTopRightPartGreyButton {
+    width: 34vw;
+  }
+  .sectionSecondLeftPart {
+    width: calc(0.55 * 84vw);
+  }
+  .sectionSecondLeftPartVertical {
+    width: 18vw;
+  }
+  .sectionSecondLeftPartQuoteImage {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+  .sectionSecondRightPart {
+    width: calc(0.45 * 84vw);
+    min-width: calc(0.6 * 768px);
+  }
+  .sectionThirdLeftPart {
+    width: calc(0.45 * 84vw);
+    min-width: calc(0.6 * 768px);
+  }
+  .sectionThirdRightPart {
+    width: calc(0.55 * 84vw);
+    min-width: calc(0.4 * 768px);
+  }
+  .sectionThirdRightPartVertical {
+    width: 18vw;
+  }
+  .sectionThirdRightPartQuoteImage {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+  .sectionFourthVerticalContainer {
+    width: calc(0.5 * 84vw);
+    min-width: calc(0.5 * 768px);
+  }
+  .sectionFourthButtonContainer {
+    margin-left: 3.15rem;
+  }
+  .sectionFourth #sectionFourthH2 {
+    margin-left: 3.15rem;
+  }
+
+  .chessBoardGridContainer {
+    display: grid;
+    grid-template-columns: repeat(8, 5.05vw);
+    grid-template-rows: repeat(8, 5.05vw);
+  }
+
+  #sectionFourthH2 {
+    margin-left: 3.15rem;
+  }
+
+  .footerCentralGeneralContainer {
+    margin-left: 3.15rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 36.864px;
+  }
+
+  #closeAsideBar {
+    display: block;
+  }
+
+  .asideFlexContainer {
+    display: none;
+    width: 9rem;
+  }
+  .asideSingleDivContainerHover {
+    width: 100%;
+    left: 9rem;
+  }
+  .asideClosingSymbol {
+    display: block;
+  }
+
+  #asideSpecialIcon, #asideSpecialFont {
+    display: none;
+  }
+
+  .asideSingleDivContainer > .asideTextClass,
+.asideRestContainerEnglishAndHelp > .asideTextClass,
+.asideTextClassSpecial,
+.asideSearchBar,
+.asideButtonGrey,
+.asideButtonGreen {
+    display: block;
+  }
+
+  .asideSearchBarMediaQueryElement, .asideButtonGreyMediaQueryElement, .asideButtonGreenMediaQueryElement {
+    display: none;
+  }
+
+  .asideSmallMediaQuery {
+    display: flex;
+  }
+
+  .chessBoardGridContainer {
+    display: grid;
+    grid-template-columns: repeat(8, 46.08px);
+    grid-template-rows: repeat(8, 46.08px);
+  }
+
+  .sectionContainer {
+    margin-left: 0;
+  }
+  .sectionTopLeftPart {
+    width: calc(8 * 46.08px);
+    min-width: calc(8 * 46.08px);
+  }
+  .sectionTopRightPart {
+    min-width: 350px;
+  }
+  .sectionTopRightPartHorizontal .sectionTopRightPartFont {
+    width: 150px;
+    margin-top: -90px;
+  }
+  .sectionThirdRightPartVertical {
+    width: 14vw;
+  }
+  .sectionFourthButtonContainer {
+    margin-left: 0;
+  }
+
+  #sectionFourthH2 {
+    margin-left: 0;
+  }
+
+  .footerCentralGeneralContainer {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .asideRestContainerHelpHoverPositionContainer {
+    left: 275%;
+  }
+
+  .sectionContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: auto auto;
+  }
+  .sectionTopLeftPart {
+    display: none;
+  }
+  .sectionTopRightPart {
+    margin-left: 0;
+  }
+  .sectionTopRightPart > h1 {
+    width: 90vw;
+  }
+  .sectionTopRightPartHorizontal:nth-of-type(1) {
+    flex-direction: column;
+    margin-top: -50px;
+  }
+  .sectionTopRightPartHorizontal:nth-of-type(1) .sectionTopRightPartFont:nth-of-type(2) {
+    margin-left: 0;
+    margin-top: 0.5vw;
+  }
+  .sectionTopRightPartHorizontal:nth-of-type(1) .sectionTopRightPartFont {
+    width: 80vw;
+    margin: 0;
+  }
+  .sectionTopRightPartHorizontal:nth-of-type(2) {
+    margin: 0;
+    margin-top: -1vw;
+    margin-bottom: 5vw;
+  }
+  .sectionTopRightPartGreenButton {
+    width: 55vw;
+  }
+  .sectionTopRightPartGreyButton {
+    width: 55vw;
+  }
+  .sectionSecondLeftPart {
+    background-color: transparent;
+    margin-top: -15vw;
+    width: 100%;
+    align-items: center;
+  }
+  .sectionSecondLeftPartFontFirst {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    max-width: 100vw;
+  }
+  .sectionSecondLeftPartGreenButton {
+    display: none;
+  }
+  .sectionSecondLeftPartQuote {
+    width: 450px;
+    margin: 0;
+    padding: 0;
+  }
+  .sectionSecondLeftPartQuoteImage {
+    margin: 0;
+    margin-right: 2vw;
+  }
+  .sectionSecondLeftPartBottom {
+    width: 100%;
+    margin-top: -7.5vh;
+    margin-bottom: 0;
+  }
+  .sectionSecondRightPart {
+    width: 100%;
+    background-color: transparent;
+    margin-top: -150px;
+  }
+  .sectionThirdRightPart {
+    background-color: transparent;
+    margin-top: -925px;
+    width: 100%;
+  }
+  .sectionThirdRightPartFontFirst {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    max-width: 100vw;
+  }
+  .sectionThirdRightPartGreenButton {
+    display: none;
+  }
+  .sectionThirdRightPartQuote {
+    width: 450px;
+    margin: 0;
+    padding: 0;
+  }
+  .sectionThirdRightPartQuoteImage {
+    margin: 0;
+    margin-right: 15px;
+  }
+  .sectionThirdRightPartBottom {
+    width: 100%;
+    margin-top: -10vw;
+    margin-bottom: 0;
+  }
+  .sectionThirdLeftPart {
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    top: 25%;
+  }
+  .sectionFourthVerticalContainer {
+    width: 100%;
+  }
+  #sectionFourthH2 {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .asideRestContainerHelpHoverPositionContainer {
+    left: 75%;
+  }
+
+  .sectionContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: auto auto;
+  }
+  .sectionTopRightPart {
+    margin-top: 25px;
+  }
+  .sectionTopRightPartGreenButton {
+    width: 264px;
+  }
+  .sectionTopRightPartGreyButton {
+    width: 264px;
+  }
+  .sectionTopRightPartHorizontal .sectionTopRightPartFont {
+    width: 100px;
+    margin-top: -90px;
+  }
+  .sectionSecondLeftPartHorizontal {
+    flex-direction: column;
+  }
+  .sectionSecondLeftPartQuote {
+    width: 80vw;
+    align-self: center;
+  }
+  .sectionSecondLeftPartQuoteImage {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .sectionSecondLeftPartQuoteName {
+    margin: 0;
+    align-self: center;
+    margin-top: 10px;
+  }
+  .sectionSecondLeftPartFontThird {
+    margin: 0;
+    align-self: center;
+  }
+  .sectionSecondRightPart {
+    margin-top: -175px;
+  }
+  .sectionSecondRightPartCentral img {
+    width: 250px;
+    height: auto;
+  }
+  .sectionThirdRightPartCentral {
+    margin-top: -25px;
+  }
+  .sectionThirdRightPartCentral > .sectionThirdRightPartFontFirst {
+    margin-top: 50px;
+  }
+  .sectionThirdRightPartHorizontal {
+    flex-direction: column;
+  }
+  .sectionThirdRightPartQuote {
+    width: 80vw;
+    align-self: center;
+  }
+  .sectionThirdRightPartQuoteImage {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .sectionThirdRightPartQuoteName {
+    margin: 0;
+    align-self: center;
+    margin-top: 10px;
+  }
+  .sectionThirdRightPartFontThird {
+    margin: 0;
+    align-self: center;
+  }
+  .sectionThirdLeftPart {
+    top: 25%;
+    margin-top: 25px;
+  }
+  .sectionThirdLeftPartCentral {
+    margin: 0;
+  }
+  .sectionThirdLeftPartCentral img {
+    width: 250px;
+    height: auto;
+  }
+  .sectionFourthVerticalContainer div, .sectionFourth p {
+    width: 70vw;
+  }
+  .sectionFourthVerticalContainer {
+    height: 375px;
+  }
+  .sectionFourthVerticalContainer > a > img {
+    width: 95vw;
+    height: 60vw;
+  }
+  .sectionFourthVerticalContainer:last-of-type {
+    margin-bottom: 25px;
+  }
+
+  #sectionFourthH2 {
+    margin-top: 50px;
+  }
+}
+* {
+  box-sizing: border-box;
+}

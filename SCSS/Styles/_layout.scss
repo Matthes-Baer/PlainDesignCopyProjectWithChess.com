@@ -1,0 +1,427 @@
+@use '../Templates' as *;
+@use '../Variables' as *;
+
+body {
+    overflow-x: hidden;
+}
+
+.aside {
+    &FlexContainer {
+        @include flexContainerMixin(flex, flex-start, stretch, 9rem, 100%);
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-right: 10rem;
+        transition: all .1s;
+        z-index: 9000;
+    }
+
+    &SingleDivContainer {
+        @include flexContainerMixin(flex, flex-start, center, 100%, 2.9rem);
+        padding: 0rem 0.5rem 0rem 0.5rem;
+
+        &:first-of-type {
+            margin-top: 0.5rem;
+        }
+
+        &Hover {
+            @include flexContainerMixin(flex, flex-start, stretch, 21.5rem, 100%);
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 9rem;
+            transition: all .1s;
+        } 
+
+        &Next {
+            @include flexContainerMixin(flex, flex-start, center, 21rem, auto);
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+        }
+
+        
+    }
+    &RestContainer {
+        @include flexContainerMixin(flex, flex-start, center, auto, auto);
+        flex-direction: column;
+
+        &:last-of-type {
+            position: absolute;
+            bottom: 2.5%;
+            z-index: -1;
+        }
+
+        &EnglishAndHelp {
+            @include flexContainerMixin(flex, flex-start, center, 9rem, 2rem);
+            padding: 0rem 0.5rem 0rem 1rem;
+            transition: all .1s;
+
+        }
+
+
+
+
+        &HelpHoverPositionContainer {
+            @include flexContainerMixin(flex, center, center, 225px, 175px);
+            display: none;
+            position: absolute;
+            left: 100%;
+            bottom: 0;
+            border-radius: 10px;
+            
+        }
+
+        &HelpHoverElementsContainer {
+            @include flexContainerMixin(flex, center, center, 225px, 175px);
+            flex-direction: column;
+            
+        }
+
+        &HelpHoverElement {
+            @include flexContainerMixin(flex, flex-start, center, 200px, 25px);
+        
+        }
+    }
+}
+
+#asideHelp {
+    &:hover .asideRestContainerHelpHoverPositionContainer {
+        display: block;
+    }
+    & > img {
+        opacity: 0.5;
+    }
+} 
+
+
+
+
+
+
+
+
+.mainContainer {
+    @include flexContainerMixin (flex, flex-start, stretch, auto, auto);
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+
+
+
+
+.section {
+    &Container {
+        @include flexContainerMixin(grid, center, stretch, auto, auto);
+        @include gridContainerMixin(2, auto, auto, auto);
+        margin-left: 9rem;
+
+    }
+
+    &Top {
+        &LeftPart {
+            @include flexContainerMixin(flex, center, center, 505px, auto);
+            margin-top: 1%;
+            
+           
+        }
+
+        &RightPart {
+            @include flexContainerMixin(flex, center, center, 495px, auto);
+            flex-direction: column;
+            margin-left: 50px;
+            transition: all .5s;
+           
+
+            &Horizontal {
+                @include flexContainerMixin(flex, center, center, auto, 100px);
+                
+
+                & .sectionTopRightPartFont {
+                    width: 200px;
+                    margin-top: -90px;
+                    text-align: center;
+                    transition: all .5s;
+                    
+                }
+
+                & .sectionTopRightPartFont:nth-of-type(2) {
+                    margin-left: 40px;
+                }
+            }
+
+            &Vertical {
+                @include flexContainerMixin(flex, center, stretch, 18.75rem, auto);
+                flex-direction: column;
+                
+            }
+
+            &ButtonIcon {
+                @include flexContainerMixin(flex, center, center, 6.25rem, auto);
+            }
+        }
+    }  
+    
+    
+
+    // Second Part
+    &Second {
+        &LeftPart {
+            @include flexContainerMixin(flex, center, stretch, 575px, 500px);
+            flex-direction: column;
+            background-color: $asideAndSectionBackgroundColor;
+            margin-top: $marginTopForLeftAndRight;
+            border-radius: $sectionBorderRadiusForLeft;
+            transition: all 0.1s;
+            
+
+            &Central {
+                @include flexContainerMixin(flex, center, center, auto, auto);
+
+                &:nth-of-type(1) {
+                  
+                }
+
+                &:nth-of-type(2) {
+                    margin-bottom: 100px;
+                }
+            }
+            
+            &Horizontal {
+                @include flexContainerMixin(flex, flex-start, stretch, auto, auto);
+              
+            }
+
+            &Vertical {
+                @include flexContainerMixin(flex, center, stretch, auto, auto);
+                flex-direction: column;
+            }
+
+            &Bottom {
+                margin-bottom: 12.5px;
+            }
+        }
+
+        &RightPart {
+            @include flexContainerMixin(flex, center, stretch, 475px, 500px);
+            flex-direction: column;
+            background-color: $asideAndSectionBackgroundColor;
+            margin-top: $marginTopForLeftAndRight;
+            border-radius: $sectionBorderRadiusForRight;
+            transition: all 0.1s;
+
+            &Central {
+                @include flexContainerMixin(flex, center, center, auto, auto);
+            }
+        }
+    }
+
+
+    // Third part
+    &Third {
+        &LeftPart {
+            @include flexContainerMixin(flex, center, stretch, 475px, 500px);
+            flex-direction: column;
+            background-color: $asideAndSectionBackgroundColor;
+            margin-top: $marginTopForLeftAndRight;
+            border-radius: $sectionBorderRadiusForRight;
+            transition: all 0.5s;
+            
+
+            &Central {
+                @include flexContainerMixin(flex, center, center, auto, auto);
+                margin-left: 12.5px;
+            }
+
+            
+            
+            
+        }
+
+        &RightPart {
+            @include flexContainerMixin(flex, center, stretch, 575px, 500px);
+            flex-direction: column;
+            background-color: $asideAndSectionBackgroundColor;
+            margin-top: $marginTopForLeftAndRight;
+            border-radius: $sectionBorderRadiusForLeft;
+            transition: all 0.5s;
+
+            &Central {
+                @include flexContainerMixin(flex, center, center, auto, auto);
+
+                &:nth-of-type(1) {
+                    
+                }
+
+                &:nth-of-type(2) {
+                    margin-bottom: 90px;
+                }
+            
+            }
+            &Horizontal {
+                @include flexContainerMixin(flex, flex-start, stretch, auto, auto);
+              
+            }
+
+            &Vertical {
+                @include flexContainerMixin(flex, center, stretch, auto, auto);
+                flex-direction: column;
+            }
+
+            &Bottom {
+                margin-bottom: 12.5px;
+            }
+        }
+    }
+
+
+
+    &Fourth {
+
+        &VerticalContainer {
+            @include flexContainerMixin(flex, flex-start, center, 525px, 400px);
+            flex-direction: column;
+            transition: all 0.5s;
+
+            & > div {
+                color: $mainWhiteFontColor;
+                width: 75%;
+                text-align: center;
+            }
+
+            & p {
+                color: $asideFontColor;
+                font-size: $smallFontSize;
+            }
+        }
+
+        &Central {
+            @include flexContainerMixin(flex, center, center, auto, auto);
+
+            & > img {
+                transform: scale(0.5);
+                margin-right: -10px;
+            }
+        
+        }
+
+        &Container {
+            @include flexContainerMixin(flex, center, center, auto, auto);
+        }
+        
+        &Button {
+            &Container {
+                @include flexContainerMixin(flex, center, center, auto, auto);
+                margin-left: 9rem
+            }
+
+
+            
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chessBoard {
+    &GridContainer {
+        @include gridContainerMixin (8, 63.125px, 8, 63.125px);
+        transition: all .5s;
+    }
+
+    &WhiteChessField {
+        @include flexContainerMixin(flex, center, center, 100%, 100%);
+        transition: all .5s;
+    }
+
+    &GreenChessField {
+        @include flexContainerMixin(flex, center, center, 100%, 100%);
+        transition: all .5s;
+    }
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    &CentralGeneralContainer {
+        @include flexContainerMixin(flex, center, center, auto, auto);
+        margin-left: 9rem;
+        flex-direction: column;
+    }
+
+    &CentralContainer {
+        @include flexContainerMixin(flex, center, center, 90%, auto);
+        flex-wrap: wrap;
+    }
+
+    &ElementContainer {
+        width: auto;
+        color: $footerFontColor;
+        font-size: 0.675rem;
+        
+
+        
+
+        &:hover {
+            color: $footerFontHoverColor;
+            cursor: pointer;
+        }
+
+        &After {
+            &::after{
+                color: $footerFontColor;
+                content: "|";
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &ImageElementContainer {
+        width: auto;
+        height: auto;
+        margin-right: 5px;
+
+        & > img {
+            width: 25px;
+            height: 25px;
+            
+            opacity: 0.5;
+            transition: all .1s;
+
+            
+        }
+
+    
+
+        & > img:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+}
+
+
+
+
+

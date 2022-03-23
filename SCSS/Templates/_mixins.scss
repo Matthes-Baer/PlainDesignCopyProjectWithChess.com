@@ -1,0 +1,27 @@
+@mixin flexContainerMixin ($displayVar, $justify-content, $align-items, $width, $height) {
+    display: $displayVar;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    width: $width;
+    height: $height;
+}
+
+@mixin gridContainerMixin ($columnAmount, $columnWidth, $rowAmount, $rowheight) {
+    display: grid;
+    grid-template-columns: repeat($columnAmount, $columnWidth);
+    grid-template-rows: repeat($rowAmount, $rowheight);
+}
+
+@mixin margins ($marginTop, $marginRight, $marginBottom, $marginLeft) {
+    margin: {
+        top: $marginTop;
+        right: $marginRight;
+        bottom: $marginBottom;
+        left: $marginLeft;
+    }
+}
+
+
+
+
+

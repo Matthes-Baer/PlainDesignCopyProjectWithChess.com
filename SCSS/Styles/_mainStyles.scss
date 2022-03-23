@@ -1,0 +1,753 @@
+@use '../Templates' as *;
+@use '../Variables' as *;
+
+body {
+    background-color: $bodyBackgroundColor;
+    margin: 0; // needed so that the asideNavigation is placed directly at the top left corner for example
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    color: $mainWhiteFontColor;
+    text-align: center;
+    font-weight: 400;
+    width: 400px;
+    transition: all .1s;
+}
+
+input:focus {
+    outline: 1px solid $searchBarOutlineColor;
+}
+
+.sectionHorizontalFlexContainer {
+    font-size: $smallFontSize;
+}
+
+#openAsideBar {
+    margin-right: -1rem;
+}
+
+#closeAsideBar {
+    display: none;
+}
+
+
+
+.aside {
+    &SmallMediaQuery {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        display: none;
+
+        &IconSpecialFont {
+            margin-left: -1rem; 
+            color: $mainWhiteFontColor;
+        }
+    }
+    &ClosingSymbol {
+        display: none;
+        width: 50px;
+        height: 50px;
+        background-color: green;
+    }
+    &FlexContainer {
+        background-color: $asideAndSectionBackgroundColor;
+    }
+
+    &TextClass {
+        color: $asideFontColor;
+        font-size: $smallFontSize;
+        margin-left: 6.5%;
+
+        &Special {
+            color: $mainWhiteFontColor;
+            font-size: $mediumFontSize;
+            margin-left: -1rem;
+
+            // Für ".com" im ersten Div-Element
+            & span {
+                font-size: 60%;
+            }
+        }
+    }
+
+    &SingleDivContainer {
+        &:hover {
+            background-color: $hoverBackgroundColor;
+            cursor: pointer;
+
+            & > p {
+                color: white;
+            }
+        }
+
+        &Hover {
+            visibility: hidden;
+            background-color: $hoverBackgroundColor;
+            transition-delay: 0.15s;
+        }
+
+        &:hover .asideSingleDivContainerHover {
+            visibility: visible;
+        }
+
+        &Next:hover:not(.asideStreamersAndEvents) {
+            background-color: $hoverBackgroundColorNext;
+        }
+
+        &Next:hover > p {
+            color: white;
+        }
+    }
+
+    &Icons {
+      width: 2rem;
+      height: 2rem;
+   
+        &Next {
+            width: 1.75rem;
+            height: 1.75rem;
+            margin-left: 5%;
+        }
+
+        &Special {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &StreamersAndEvents {
+        background-color: $bodyBackgroundColor;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        
+        &:hover .asideTodaySpecialIcons {
+            opacity: 1.0;
+            }
+        }
+   
+    &PlayingNow {
+        background-color: $bodyBackgroundColor;
+        height: 2rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        pointer-events: none;
+    }
+
+    &TodaySpecialIcons {
+        width: 0.9rem;
+        height: 0.9rem;
+        margin-right: 5%;
+        margin-left: auto;
+        opacity: 0.75;
+    }
+
+    &TodayRating {
+        color: $asideFontColor;
+        opacity: 0.75;
+        font-size: 0.75rem;
+        margin-left: 0.25rem;
+    }
+
+    &GMIcon {
+        width: 1.25rem;
+        height: 0.9rem;
+        margin-left: 5%;
+    }
+
+    &PlayerName {
+        margin-left: 2.5%;
+    }
+
+    &SearchBar {
+        background-color: $searchBarBackgroundColor;
+        width: 7.75rem;
+        min-height: 2rem;
+        -webkit-border-radius: 0.25rem;
+        border-radius: 0.25rem;
+        font-size: $smallFontSize;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.15);
+        border: 0.5px solid $searchBarBackgroundColor;
+        margin-top: 3.5%;
+        padding: 0 .5rem 0 .5rem;
+
+        &:hover {
+            outline: 1px solid $searchBarOutlineColor;
+        }
+
+        &MediaQueryElement {
+            width: 3.15rem;
+            height: 2.9rem;
+            display: none;
+            
+            
+            & > div {
+                @include flexContainerMixin(flex, center, center, 100%, 100%);
+            }
+
+            & > div > img {
+                width: 50%;
+                height: 50%;
+            }
+
+            &:hover {
+                background-color: $hoverBackgroundColor;
+                color: $mainWhiteFontColor;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &Button {
+        &Grey {
+        @extend .asideButton;
+        background-color: $greyButtonBackgroundColor;
+        border: 0.1px solid $greyButtonBackgroundColor;
+        color: $greyButtonFontColor;
+        font-size: $smallFontSize;
+        margin-top: 1.25rem;
+        transition: all .1s;
+
+            &MediaQueryElement {
+                display: none;
+                width: 2rem;
+                height: 2rem;
+                background-color: $greyButtonBackgroundColor;
+                border-radius: 0.35rem;
+                margin-top: 0.65rem;
+                transition: all .1s;
+            
+                & > div {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+                & > div > img {
+                    width: 60%;
+                    height: 60%;
+                    opacity: 0.5;
+                }
+
+                &:hover {
+                    background-color: $greyButtonHoverBackgroundColor;
+                    cursor: pointer;
+                }
+
+                &:hover.asideButtonGreyMediaQueryElement img {
+                    opacity: 1.0;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &Green {
+        @extend .asideButton;
+        color: $mainWhiteFontColor;
+        background-color: $greenButtonBackgroundColor;
+        border: 0.1px solid $greenButtonBackgroundColor;
+        font-size: $smallFontSize;
+        margin-top: 0.65rem;
+        transition: all .1s;
+
+            &MediaQueryElement {
+                display: none;
+                width: 2rem;
+                height: 2rem;
+                background-color: $greenButtonBackgroundColor;
+                border-radius: 0.35rem;
+                margin-top: 0.65rem;
+                transition: all .1s;
+            
+                & > div {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
+                & > div > img {
+                    width: 60%;
+                    height: 60%;
+                }
+
+                &:hover {
+                    background-color: $greenButtonHoverBackgroundColor;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &Grey:hover {
+            background-color: $greyButtonHoverBackgroundColor;
+            color: $mainWhiteFontColor;
+        }
+
+        &Green:hover {
+            background-color: $greenButtonHoverBackgroundColor;
+            color: $mainWhiteFontColor;
+        }
+    }
+
+
+    &RestContainer {
+        &EnglishAndHelp {
+            transition: all .1s;
+            
+            & > .asideIcons {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+
+            & > .asideTextClass {
+                font-size: 0.75rem;
+                opacity: 0.35;
+                padding-left: 0.35rem;
+                color: $mainWhiteFontColor;
+            }
+            
+            &:hover.asideRestContainerEnglishAndHelp > .asideTextClass {
+                opacity: 1.0;
+                cursor: pointer;
+            }
+
+            &:hover {
+                background-color: $hoverBackgroundColor;
+                cursor: pointer;
+            }
+        }
+
+        &HelpHoverPositionContainer {
+            background-color: rgba(27, 26, 24, 1.0);
+            transition: all .5s;
+        }
+
+        &HelpHoverElementsContainer {
+            
+        }
+
+        &HelpHoverElement {
+            padding: 15px;
+
+            & > p {
+                font-size: 0.75rem;
+                color: $asideFontColor;
+                text-align: center;
+                margin-left: 10px;
+            }
+
+            & > img {
+                width: 25px;
+                height: 25px;
+                opacity: 0.5;
+            }
+
+            &:hover {
+                background-color: rgba(73, 72, 70, 1.0);
+            }
+
+            &:hover p {
+                color: $mainWhiteFontColor;
+            }
+        }
+    }
+
+    
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section {
+    &Top {
+        &RightPart {
+            &GreenButton {
+                @extend .sectionTopRightPartButton;
+                background-color: $greenButtonBackgroundColor;
+                box-shadow: 0px 5px 0 0 $greenButtonBoxShadowColor;
+                margin-bottom: 2rem;
+                margin-top: -2.5rem;
+                width: 425px;
+                transition: width .5s;
+                z-index: 1;
+                min-width: 210px;
+                
+
+                & .sectionTopRightPartVertical div:first-of-type {
+                    font-size: 1.5rem;
+                    color: $mainWhiteFontColor;
+                    margin-bottom: 0.5rem;
+                }
+
+                & .sectionTopRightPartVertical div:last-of-type {
+                    font-size: 0.75rem;
+                    color: $mainWhiteFontColor;
+                }
+
+                &:hover {
+                    background-color: $greenButtonHoverBackgroundColor;
+                    box-shadow: 0px 5px 0 0 $greenButtonBoxShadowColor, 0 7.5px 12.5px 0 $greenButtonBoxShadowColor,;
+                }
+            }
+
+
+
+            &GreyButton {
+                @extend .sectionTopRightPartButton;
+                background-color: rgba(65, 62, 60, 1.0);
+                box-shadow: 0px 5px 0 0 $greyButtonBoxShadowColor;
+                width: 425px;
+                transition: width .5s;
+                z-index: 1;
+                min-width: 210px;
+
+                & .sectionTopRightPartVertical div:first-of-type {
+                    font-size: 1.5rem;
+                    color: $greyButtonFontColor;
+                    margin-bottom: 0.5rem;
+                    transition: all .1s;
+                }
+
+                & .sectionTopRightPartVertical div:last-of-type {
+                    font-size: 0.75rem;
+                    color: $greyButtonFontColor;
+                    transition: all .1s;
+                }
+
+                &:hover {
+                    background-color: rgba(82, 80, 77, 1.0);
+                }
+
+                &:hover .sectionTopRightPartVertical div {
+                    color: $mainWhiteFontColor;
+                }
+            }
+
+            &Font {
+                color: rgba(186, 186, 185, 0.45);
+                
+                &:first-of-type {
+                    margin-left: 12.5px;
+                }
+
+                & span {
+                    color: $mainWhiteFontColor;
+                }
+            }
+
+           
+        }
+    }
+
+    &Second {
+        &LeftPart {
+            &GreenButton {
+                @extend .sectionTopRightPartGreenButton;
+                margin: 0;
+                width: 200px;
+
+
+                & > div {
+                    color: $mainWhiteFontColor;
+                    padding: 15px;
+                    font-size: $mediumFontSize;
+                }
+            }
+
+            &Font {
+                &First {
+                    font-size: $sectionHeadlineFontSize;
+                    color: $mainWhiteFontColor;
+                    text-align: center;
+                    width: 30vw;
+                    max-width: 400px;
+                    margin-top: 15px;
+                    height: 100px;
+
+                 
+                }
+                &Second {
+                    font-size: $sectionQuoteFontSize;
+                    color: $sectionQuoteColor;
+                }
+                &Third {
+                    font-size: $sectionQuoteNameFontSize;
+                    color: $sectionQuoteNameColor;
+                    margin-left: 2.5%;
+                }
+
+                &Button {
+                    font-size: $sectionButtonFontSize;
+                    text-align: center;
+                }
+            }
+
+            &Quote {
+                width: 300px;
+
+                &Image {
+                   margin-left: 50px;
+                   margin-right: 50px;
+                   align-self: center;
+                    
+                    & > img {
+                        border-radius: $sectionImageBorderRadius;
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+
+                &Name {
+                    margin-top: 5%;
+                }
+            }
+        }
+
+        &RightPart {
+            & img {
+                min-width: 200px;
+                min-height: 200px;
+            }
+        }
+    }
+
+
+
+
+
+    &Third {
+        &RightPart {
+            &GreenButton {
+                @extend .sectionTopRightPartGreenButton;
+                margin: 0;
+                width: 200px;
+
+                & > div {
+                    color: $mainWhiteFontColor;
+                    padding: 15px;
+                    font-size: $mediumFontSize;
+                }
+            }
+
+            &Font {
+                &First {
+                    font-size: $sectionHeadlineFontSize;
+                    color: $mainWhiteFontColor;
+                    text-align: center;
+                    width: 30vw;
+                    max-width: 400px;
+                    margin-top: 15px;
+                    height: 100px;
+                }
+                &Second {
+                    font-size: $sectionQuoteFontSize;
+                    color: $sectionQuoteColor;
+                }
+                &Third {
+                    font-size: $sectionQuoteNameFontSize;
+                    color: $sectionQuoteNameColor;
+                    margin-left: 2.5%;
+                }
+
+                &Button {
+                    font-size: $sectionButtonFontSize;
+                    text-align: center;
+                }
+            }
+
+            &Quote {
+                width: 300px;
+
+                &Image {
+                   margin-left: 50px;
+                   margin-right: 50px;
+                   align-self: center;
+                    
+                    & > img {
+                        border-radius: $sectionImageBorderRadius;
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+
+                &Name {
+                    margin-top: 5%;
+                }
+            }
+        }
+
+        &LeftPart {
+            & img {
+                min-width: 200px;
+                min-height: 200px;
+            }
+        }
+    }
+
+
+
+
+
+
+    &Fourth {
+        &VerticalContainer {
+            & > a {
+                transition: all .1s;
+            }
+
+            & > a:hover {
+                opacity: 0.75;
+            }
+
+            & > a:hover + div {
+                opacity: 0.75;
+            }
+        }
+
+        &Button {
+            &Container {
+                @extend .sectionTopRightPartGreenButton;
+                width: 200px;
+            }
+    
+            &Font {
+                text-align: center;
+                vertical-align: middle;
+                color: $mainWhiteFontColor;
+                padding: 15px;
+                font-size: $mediumFontSize;
+                
+                
+            }
+        }
+    }
+
+    
+}
+
+
+#sectionFourthH2 {
+    width: auto;
+    margin-left: 9rem;
+    color: $mainWhiteFontColor;
+    text-align: center;
+    font-size: 2rem;
+    transition: all 0.1s;
+    z-index: 9000;
+    
+
+    & a {
+        transition: all 0.1s;
+    }
+
+    a:active {
+        color: $mainWhiteFontColor;
+    }
+
+    & a:visited {
+        color: $mainWhiteFontColor;
+    }
+
+    & a:hover {
+        opacity: 0.75;
+    }
+}
+
+
+.chessBoard {
+    &GreenChessField {
+        background-color: $greenChessField;
+        &:nth-child(8) {
+            border-radius: 0px 5px 0px 0px;
+        }
+        &:nth-child(57) {
+            border-radius: 0px 0px 0px 5px;
+        }
+    }
+    &WhiteChessField {
+        background-color: $whiteChessField;
+        &:nth-child(1) {
+            border-radius: 5px 0px 0px 0px;
+        }
+        &:nth-child(64) {
+            border-radius: 0px 0px 5px 0px;
+        }
+    }
+
+    &Icons {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+
+.footer {
+    &ElementContainer {
+        width: auto;
+        color: $footerFontColor;
+        font-size: 0.675rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $footerFontHoverColor;
+        }
+
+        &After {
+            &::after{
+                color: $footerFontColor;
+                content: "|";
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+
+#firstDiv, #secondDiv {
+    width: 37.5%;
+    height: 37.5%;
+    background-color: $asideAndSectionBackgroundColor;
+    border-radius: 50%;
+    opacity: 0.5;
+}

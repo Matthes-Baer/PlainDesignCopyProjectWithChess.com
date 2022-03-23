@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.button_1 {
+  width: 4%;
+  background-color: #383634;
+  height: 20px;
+}
+
+.button_2 {
+  width: 8%;
+  background-color: #383634;
+  height: 40px;
+}
+
+.button_3 {
+  width: 12%;
+  background-color: #383634;
+  height: 60px;
+}
+
+.asideButton {
+  height: 2.5rem;
+  -webkit-border-radius: 0.35rem;
+  border-radius: 0.35rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 7rem;
+  cursor: pointer;
+}
+
+.sectionTopRightPartButton {
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.asideFlexContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 9rem;
+  height: 100%;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-right: 10rem;
+  transition: all 0.1s;
+  z-index: 9000;
+}
+.asideSingleDivContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 2.9rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+.asideSingleDivContainer:first-of-type {
+  margin-top: 0.5rem;
+}
+.asideSingleDivContainerHover {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 21.5rem;
+  height: 100%;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 9rem;
+  transition: all 0.1s;
+}
+.asideSingleDivContainerNext {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 21rem;
+  height: auto;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.asideRestContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+.asideRestContainer:last-of-type {
+  position: absolute;
+  bottom: 2.5%;
+  z-index: -1;
+}
+.asideRestContainerEnglishAndHelp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 9rem;
+  height: 2rem;
+  padding: 0rem 0.5rem 0rem 1rem;
+  transition: all 0.1s;
+}
+.asideRestContainerHelpHoverPositionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 175px;
+  display: none;
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  border-radius: 10px;
+}
+.asideRestContainerHelpHoverElementsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 175px;
+  flex-direction: column;
+}
+.asideRestContainerHelpHoverElement {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 25px;
+}
+
+#asideHelp:hover .asideRestContainerHelpHoverPositionContainer {
+  display: block;
+}
+#asideHelp > img {
+  opacity: 0.5;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sectionContainer {
+  display: grid;
+  justify-content: center;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(auto, auto);
+  margin-left: 9rem;
+}
+.sectionTopLeftPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 505px;
+  height: auto;
+  margin-top: 1%;
+}
+.sectionTopRightPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 495px;
+  height: auto;
+  flex-direction: column;
+  margin-left: 50px;
+  transition: all 0.5s;
+}
+.sectionTopRightPartHorizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100px;
+}
+.sectionTopRightPartHorizontal .sectionTopRightPartFont {
+  width: 200px;
+  margin-top: -90px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.sectionTopRightPartHorizontal .sectionTopRightPartFont:nth-of-type(2) {
+  margin-left: 40px;
+}
+.sectionTopRightPartVertical {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 18.75rem;
+  height: auto;
+  flex-direction: column;
+}
+.sectionTopRightPartButtonIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.25rem;
+  height: auto;
+}
+.sectionSecondLeftPart {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 575px;
+  height: 500px;
+  flex-direction: column;
+  background-color: #272522;
+  margin-top: 3.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  transition: all 0.1s;
+}
+.sectionSecondLeftPartCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.sectionSecondLeftPartCentral:nth-of-type(2) {
+  margin-bottom: 100px;
+}
+.sectionSecondLeftPartHorizontal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+}
+.sectionSecondLeftPartVertical {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+.sectionSecondLeftPartBottom {
+  margin-bottom: 12.5px;
+}
+.sectionSecondRightPart {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 475px;
+  height: 500px;
+  flex-direction: column;
+  background-color: #272522;
+  margin-top: 3.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  transition: all 0.1s;
+}
+.sectionSecondRightPartCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.sectionThirdLeftPart {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 475px;
+  height: 500px;
+  flex-direction: column;
+  background-color: #272522;
+  margin-top: 3.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  transition: all 0.5s;
+}
+.sectionThirdLeftPartCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-left: 12.5px;
+}
+.sectionThirdRightPart {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 575px;
+  height: 500px;
+  flex-direction: column;
+  background-color: #272522;
+  margin-top: 3.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  transition: all 0.5s;
+}
+.sectionThirdRightPartCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.sectionThirdRightPartCentral:nth-of-type(2) {
+  margin-bottom: 100px;
+}
+.sectionThirdRightPartHorizontal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+}
+.sectionThirdRightPartVertical {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+.sectionThirdRightPartBottom {
+  margin-bottom: 12.5px;
+}
+.sectionFourthVerticalContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 525px;
+  height: 400px;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.sectionFourthVerticalContainer > div {
+  color: white;
+  width: 75%;
+  text-align: center;
+}
+.sectionFourthVerticalContainer p {
+  color: #a5a4a3;
+  font-size: 0.8rem;
+}
+.sectionFourthCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.sectionFourthCentral > img {
+  transform: scale(0.5);
+}
+.sectionFourthContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.sectionFourthButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-left: 9rem;
+}
+
+.chessBoardGridContainer {
+  display: grid;
+  grid-template-columns: repeat(8, 63.125px);
+  grid-template-rows: repeat(8, 63.125px);
+  transition: all 0.5s;
+}
+.chessBoardWhiteChessField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.chessBoardGreenChessField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.footerCentralContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-left: 9rem;
+  flex-wrap: wrap;
+}
+.footerElementContainer {
+  width: auto;
+  color: #a5a4a3;
+  font-size: 0.7rem;
+}
+.footerElementContainer:hover {
+  color: white;
+}
+.footerElementContainerAfter::after {
+  content: "|";
+  margin-left: 5px;
+}
+.footerElementContainerAfter:last-of-type::after {
+  content: "";
+  margin: 0;
+}
+.footerElementContainer:not(.footerElementContainer:last-of-type) {
+  margin-right: 5px;
+}

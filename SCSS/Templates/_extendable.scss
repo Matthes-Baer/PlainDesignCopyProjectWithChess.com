@@ -1,0 +1,26 @@
+@use '../Variables/colors' as *;
+
+@for $i from 1 to 4 {
+    .button_#{$i} { 
+        width: 100%/25 * $i; 
+        background-color: $greyButtonBackgroundColor;
+        height: 20px * $i;
+    }
+}
+
+.asideButton {
+    height: 2.5rem;
+    -webkit-border-radius: 0.35rem;
+    border-radius: 0.35rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 7rem;
+    cursor: pointer;
+}
+
+.sectionTopRightPartButton {
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all .1s;
+}

@@ -1,0 +1,27 @@
+.button_1 {
+  width: 4%;
+  background-color: #383634;
+  height: 20px;
+}
+
+.button_2 {
+  width: 8%;
+  background-color: #383634;
+  height: 40px;
+}
+
+.button_3 {
+  width: 12%;
+  background-color: #383634;
+  height: 60px;
+}
+
+.asideButton {
+  height: 2.5rem;
+  -webkit-border-radius: 0.35rem;
+  border-radius: 0.35rem;
+  margin: 1rem 1.6rem 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 8rem;
+}
