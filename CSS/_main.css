@@ -17,7 +17,7 @@
   height: 60px;
 }
 
-.asideButton, .asideButtonGrey, .asideButtonGreen {
+.asideButton, .asideButtonGrey, .asideButtonGreen, .footerGithubButton {
   height: 2.5rem;
   -webkit-border-radius: 0.35rem;
   border-radius: 0.35rem;
@@ -1020,6 +1020,14 @@ input:focus {
 }
 .footerExtraSingle > a {
   color: #959593;
+}
+.footerGithubButton {
+  background-color: #7fa650;
+  color: white;
+  transition: all 0.5s;
+}
+.footerGithubButton:hover {
+  background-color: #95bb4a;
 }
 
 #firstDiv, #secondDiv {
