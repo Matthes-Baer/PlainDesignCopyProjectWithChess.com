@@ -464,11 +464,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -869,15 +864,15 @@ input:focus {
 }
 .sectionSecondLeftPartQuoteImage > img {
   border-radius: 0.25rem;
-  width: 150px;
-  height: 150px;
+  max-width: 100%;
+  height: auto;
 }
 .sectionSecondLeftPartQuoteName {
   margin-top: 5%;
 }
 .sectionSecondRightPart img {
-  min-width: 200px;
-  min-height: 200px;
+  max-width: 100%;
+  height: auto;
 }
 .sectionThirdRightPartGreenButton {
   margin: 0;
@@ -920,15 +915,15 @@ input:focus {
 }
 .sectionThirdRightPartQuoteImage > img {
   border-radius: 0.25rem;
-  width: 150px;
-  height: 150px;
+  max-width: 100%;
+  height: auto;
 }
 .sectionThirdRightPartQuoteName {
   margin-top: 5%;
 }
 .sectionThirdLeftPart img {
-  min-width: 200px;
-  min-height: 200px;
+  max-width: 100%;
+  height: auto;
 }
 .sectionFourthVerticalContainer > a {
   transition: all 0.1s;
@@ -938,6 +933,10 @@ input:focus {
 }
 .sectionFourthVerticalContainer > a:hover + div {
   opacity: 0.75;
+}
+.sectionFourthVerticalContainer img {
+  max-width: 100%;
+  height: auto;
 }
 .sectionFourthButtonContainer {
   width: 200px;
