@@ -761,6 +761,17 @@ input:focus {
             }
         }
     }
+
+    &GithubButton {
+        @extend .asideButton;
+        background-color: $greenButtonBackgroundColor;
+        color: $mainWhiteFontColor;
+        transition: all .5s;
+
+        &:hover {
+            background-color: $greenButtonHoverBackgroundColor;
+        }
+    }
 }
 
 
