@@ -10,11 +10,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 a {
     text-decoration: none;
     color: $mainWhiteFontColor;
@@ -533,8 +528,8 @@ input:focus {
                     
                     & > img {
                         border-radius: $sectionImageBorderRadius;
-                        width: 150px;
-                        height: 150px;
+                        max-width: 100%;
+                        height: auto;
                     }
                 }
 
@@ -546,8 +541,10 @@ input:focus {
 
         &RightPart {
             & img {
-                min-width: 200px;
-                min-height: 200px;
+                max-width: 100%;
+                height: auto;
+                // min-width: 200px;
+                // min-height: 200px;
             }
         }
     }
@@ -606,8 +603,8 @@ input:focus {
                     
                     & > img {
                         border-radius: $sectionImageBorderRadius;
-                        width: 150px;
-                        height: 150px;
+                        max-width: 100%;
+                        height: auto;
                     }
                 }
 
@@ -619,8 +616,10 @@ input:focus {
 
         &LeftPart {
             & img {
-                min-width: 200px;
-                min-height: 200px;
+                max-width: 100%;
+                height: auto;
+                // min-width: 200px;
+                // min-height: 200px;
             }
         }
     }
@@ -642,6 +641,11 @@ input:focus {
 
             & > a:hover + div {
                 opacity: 0.75;
+            }
+
+            & img {
+                max-width: 100%;
+                height: auto;
             }
         }
 
