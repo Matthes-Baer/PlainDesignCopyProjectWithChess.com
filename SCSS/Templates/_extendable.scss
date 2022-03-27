@@ -1,13 +1,5 @@
 @use '../Variables/colors' as *;
 
-@for $i from 1 to 4 {
-    .button_#{$i} { 
-        width: 100%/25 * $i; 
-        background-color: $greyButtonBackgroundColor;
-        height: 20px * $i;
-    }
-}
-
 .asideButton {
     height: 2.5rem;
     -webkit-border-radius: 0.35rem;

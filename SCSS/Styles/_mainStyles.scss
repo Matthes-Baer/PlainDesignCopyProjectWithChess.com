@@ -45,8 +45,6 @@ input:focus {
     display: none;
 }
 
-
-
 .aside {
     &SmallMediaQuery {
         position: absolute;
@@ -64,12 +62,14 @@ input:focus {
             color: $mainWhiteFontColor;
         }
     }
+
     &ClosingSymbol {
         display: none;
         width: 50px;
         height: 50px;
         background-color: green;
     }
+
     &FlexContainer {
         background-color: $asideAndSectionBackgroundColor;
     }
@@ -246,6 +246,7 @@ input:focus {
                     align-items: center;
                     
                 }
+
                 & > div > img {
                     width: 60%;
                     height: 60%;
@@ -289,6 +290,7 @@ input:focus {
                     justify-content: center;
                     align-items: center;
                 }
+
                 & > div > img {
                     width: 60%;
                     height: 60%;
@@ -311,7 +313,6 @@ input:focus {
             color: $mainWhiteFontColor;
         }
     }
-
 
     &RestContainer {
         &EnglishAndHelp {
@@ -345,10 +346,6 @@ input:focus {
             transition: all .5s;
         }
 
-        &HelpHoverElementsContainer {
-            
-        }
-
         &HelpHoverElement {
             padding: 15px;
 
@@ -374,25 +371,7 @@ input:focus {
             }
         }
     }
-
-    
 }
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .section {
     &Top {
@@ -425,8 +404,6 @@ input:focus {
                     box-shadow: 0px 5px 0 0 $greenButtonBoxShadowColor, 0 7.5px 12.5px 0 $greenButtonBoxShadowColor,;
                 }
             }
-
-
 
             &GreyButton {
                 @extend .sectionTopRightPartButton;
@@ -470,8 +447,6 @@ input:focus {
                     color: $mainWhiteFontColor;
                 }
             }
-
-           
         }
     }
 
@@ -481,7 +456,6 @@ input:focus {
                 @extend .sectionTopRightPartGreenButton;
                 margin: 0;
                 width: 200px;
-
 
                 & > div {
                     color: $mainWhiteFontColor;
@@ -499,13 +473,13 @@ input:focus {
                     max-width: 400px;
                     margin-top: 15px;
                     height: 100px;
-
-                 
                 }
+
                 &Second {
                     font-size: $sectionQuoteFontSize;
                     color: $sectionQuoteColor;
                 }
+
                 &Third {
                     font-size: $sectionQuoteNameFontSize;
                     color: $sectionQuoteNameColor;
@@ -548,10 +522,6 @@ input:focus {
             }
         }
     }
-
-
-
-
 
     &Third {
         &RightPart {
@@ -577,10 +547,12 @@ input:focus {
                     margin-top: 15px;
                     height: 100px;
                 }
+
                 &Second {
                     font-size: $sectionQuoteFontSize;
                     color: $sectionQuoteColor;
                 }
+
                 &Third {
                     font-size: $sectionQuoteNameFontSize;
                     color: $sectionQuoteNameColor;
@@ -618,16 +590,9 @@ input:focus {
             & img {
                 max-width: 100%;
                 height: auto;
-                // min-width: 200px;
-                // min-height: 200px;
             }
         }
     }
-
-
-
-
-
 
     &Fourth {
         &VerticalContainer {
@@ -660,16 +625,11 @@ input:focus {
                 vertical-align: middle;
                 color: $mainWhiteFontColor;
                 padding: 15px;
-                font-size: $mediumFontSize;
-                
-                
+                font-size: $mediumFontSize;  
             }
         }
     }
-
-    
 }
-
 
 #sectionFourthH2 {
     width: auto;
@@ -680,7 +640,6 @@ input:focus {
     transition: all 0.1s;
     z-index: 9000;
     
-
     & a {
         transition: all 0.1s;
     }
@@ -698,7 +657,6 @@ input:focus {
     }
 }
 
-
 .chessBoard {
     &GreenChessField {
         background-color: $greenChessField;
@@ -709,6 +667,7 @@ input:focus {
             border-radius: 0px 0px 0px 5px;
         }
     }
+
     &WhiteChessField {
         background-color: $whiteChessField;
         &:nth-child(1) {
@@ -724,8 +683,6 @@ input:focus {
         height: 80%;
     }
 }
-
-
 
 .footer {
     &ElementContainer {
@@ -751,6 +708,7 @@ input:focus {
     &Extra {
         width: 100%;
         margin-left: 9rem;
+
         &Single {
             width: 100%;
             color: $mainWhiteFontColor;
@@ -773,8 +731,6 @@ input:focus {
         }
     }
 }
-
-
 
 #firstDiv, #secondDiv {
     width: 37.5%;

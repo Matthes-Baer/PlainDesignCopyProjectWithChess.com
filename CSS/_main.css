@@ -1,22 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-.button_1 {
-  width: 4%;
-  background-color: #383634;
-  height: 20px;
-}
-
-.button_2 {
-  width: 8%;
-  background-color: #383634;
-  height: 40px;
-}
-
-.button_3 {
-  width: 12%;
-  background-color: #383634;
-  height: 60px;
-}
-
 .asideButton, .asideButtonGrey, .asideButtonGreen, .footerGithubButton {
   height: 2.5rem;
   -webkit-border-radius: 0.35rem;
@@ -1129,7 +1111,8 @@ input:focus {
   .sectionFourthButtonContainer {
     margin-left: 3.15rem;
   }
-  .sectionFourth #sectionFourthH2 {
+
+  #sectionFourthH2 {
     margin-left: 3.15rem;
   }
 
@@ -1137,10 +1120,6 @@ input:focus {
     display: grid;
     grid-template-columns: repeat(8, 5.05vw);
     grid-template-rows: repeat(8, 5.05vw);
-  }
-
-  #sectionFourthH2 {
-    margin-left: 3.15rem;
   }
 
   .footerCentralGeneralContainer {
@@ -1151,6 +1130,23 @@ input:focus {
   }
 }
 @media screen and (max-width: 960px) {
+  .asideSingleDivContainer > .asideTextClass,
+.asideRestContainerEnglishAndHelp > .asideTextClass,
+.asideTextClassSpecial,
+.asideSearchBar,
+.asideButtonGrey,
+.asideButtonGreen {
+    display: block;
+  }
+
+  .asideSearchBarMediaQueryElement, .asideButtonGreyMediaQueryElement, .asideButtonGreenMediaQueryElement {
+    display: none;
+  }
+
+  .asideSmallMediaQuery {
+    display: flex;
+  }
+
   h1 {
     font-size: 36.864px;
   }
@@ -1173,23 +1169,6 @@ input:focus {
 
   #asideSpecialIcon, #asideSpecialFont {
     display: none;
-  }
-
-  .asideSingleDivContainer > .asideTextClass,
-.asideRestContainerEnglishAndHelp > .asideTextClass,
-.asideTextClassSpecial,
-.asideSearchBar,
-.asideButtonGrey,
-.asideButtonGreen {
-    display: block;
-  }
-
-  .asideSearchBarMediaQueryElement, .asideButtonGreyMediaQueryElement, .asideButtonGreenMediaQueryElement {
-    display: none;
-  }
-
-  .asideSmallMediaQuery {
-    display: flex;
   }
 
   .chessBoardGridContainer {
@@ -1347,7 +1326,7 @@ input:focus {
   .sectionFourthVerticalContainer {
     width: 100%;
   }
-  #sectionFourthH2 {
+  .section #sectionFourthH2 {
     margin-top: 150px;
   }
 

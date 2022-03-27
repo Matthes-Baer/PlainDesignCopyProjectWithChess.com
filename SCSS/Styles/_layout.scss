@@ -39,9 +39,8 @@ body {
             margin-left: 0.25rem;
             margin-right: 0.25rem;
         }
-
-        
     }
+
     &RestContainer {
         @include flexContainerMixin(flex, flex-start, center, auto, auto);
         flex-direction: column;
@@ -56,11 +55,7 @@ body {
             @include flexContainerMixin(flex, flex-start, center, 9rem, 2rem);
             padding: 0rem 0.5rem 0rem 1rem;
             transition: all .1s;
-
         }
-
-
-
 
         &HelpHoverPositionContainer {
             @include flexContainerMixin(flex, center, center, 225px, 175px);
@@ -69,18 +64,15 @@ body {
             left: 100%;
             bottom: 0;
             border-radius: 10px;
-            
         }
 
         &HelpHoverElementsContainer {
             @include flexContainerMixin(flex, center, center, 225px, 175px);
             flex-direction: column;
-            
         }
 
         &HelpHoverElement {
             @include flexContainerMixin(flex, flex-start, center, 200px, 25px);
-        
         }
     }
 }
@@ -94,13 +86,6 @@ body {
     }
 } 
 
-
-
-
-
-
-
-
 .mainContainer {
     @include flexContainerMixin (flex, flex-start, stretch, auto, auto);
     flex-direction: column;
@@ -108,24 +93,17 @@ body {
     
 }
 
-
-
-
-
 .section {
     &Container {
         @include flexContainerMixin(grid, center, stretch, auto, auto);
         @include gridContainerMixin(2, auto, auto, auto);
         margin-left: 9rem;
-
     }
 
     &Top {
         &LeftPart {
             @include flexContainerMixin(flex, center, center, 505px, auto);
             margin-top: 1%;
-            
-           
         }
 
         &RightPart {
@@ -133,18 +111,15 @@ body {
             flex-direction: column;
             margin-left: 50px;
             transition: all .5s;
-           
 
             &Horizontal {
                 @include flexContainerMixin(flex, center, center, auto, 100px);
-                
-
+            
                 & .sectionTopRightPartFont {
                     width: 200px;
                     margin-top: -90px;
                     text-align: center;
-                    transition: all .5s;
-                    
+                    transition: all .5s; 
                 }
 
                 & .sectionTopRightPartFont:nth-of-type(2) {
@@ -155,7 +130,6 @@ body {
             &Vertical {
                 @include flexContainerMixin(flex, center, stretch, 18.75rem, auto);
                 flex-direction: column;
-                
             }
 
             &ButtonIcon {
@@ -163,10 +137,7 @@ body {
             }
         }
     }  
-    
-    
 
-    // Second Part
     &Second {
         &LeftPart {
             @include flexContainerMixin(flex, center, stretch, 575px, 500px);
@@ -175,14 +146,9 @@ body {
             margin-top: $marginTopForLeftAndRight;
             border-radius: $sectionBorderRadiusForLeft;
             transition: all 0.1s;
-            
-
+        
             &Central {
                 @include flexContainerMixin(flex, center, center, auto, auto);
-
-                &:nth-of-type(1) {
-                  
-                }
 
                 &:nth-of-type(2) {
                     margin-bottom: 100px;
@@ -191,7 +157,6 @@ body {
             
             &Horizontal {
                 @include flexContainerMixin(flex, flex-start, stretch, auto, auto);
-              
             }
 
             &Vertical {
@@ -218,8 +183,6 @@ body {
         }
     }
 
-
-    // Third part
     &Third {
         &LeftPart {
             @include flexContainerMixin(flex, center, stretch, 475px, 500px);
@@ -229,15 +192,10 @@ body {
             border-radius: $sectionBorderRadiusForRight;
             transition: all 0.5s;
             
-
             &Central {
                 @include flexContainerMixin(flex, center, center, auto, auto);
                 margin-left: 12.5px;
-            }
-
-            
-            
-            
+            }    
         }
 
         &RightPart {
@@ -251,18 +209,12 @@ body {
             &Central {
                 @include flexContainerMixin(flex, center, center, auto, auto);
 
-                &:nth-of-type(1) {
-                    
-                }
-
                 &:nth-of-type(2) {
                     margin-bottom: 90px;
                 }
-            
             }
             &Horizontal {
                 @include flexContainerMixin(flex, flex-start, stretch, auto, auto);
-              
             }
 
             &Vertical {
@@ -276,10 +228,7 @@ body {
         }
     }
 
-
-
     &Fourth {
-
         &VerticalContainer {
             @include flexContainerMixin(flex, flex-start, center, 525px, 400px);
             flex-direction: column;
@@ -315,27 +264,10 @@ body {
             &Container {
                 @include flexContainerMixin(flex, center, center, auto, auto);
                 margin-left: 9rem
-            }
-
-
-            
+            }  
         }
-
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .chessBoard {
     &GridContainer {
@@ -354,14 +286,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
 .footer {
     &CentralGeneralContainer {
         @include flexContainerMixin(flex, center, center, auto, auto);
@@ -378,10 +302,7 @@ body {
         width: auto;
         color: $footerFontColor;
         font-size: 0.675rem;
-        
-
-        
-
+    
         &:hover {
             color: $footerFontHoverColor;
             cursor: pointer;
@@ -405,14 +326,9 @@ body {
         & > img {
             width: 25px;
             height: 25px;
-            
             opacity: 0.5;
             transition: all .1s;
-
-            
         }
-
-    
 
         & > img:hover {
             cursor: pointer;
@@ -430,9 +346,3 @@ body {
         }
     }
 }
-
-
-
-
-
-
