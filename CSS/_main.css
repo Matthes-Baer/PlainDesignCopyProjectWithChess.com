@@ -1326,7 +1326,8 @@ input:focus {
   .sectionFourthVerticalContainer {
     width: 100%;
   }
-  .section #sectionFourthH2 {
+
+  #sectionFourthH2 {
     margin-top: 150px;
   }
 
