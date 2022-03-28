@@ -1,4 +1,3 @@
-// Media Query Section
 @media  screen and (max-width: 1250px) {
     .asideSingleDivContainer > .asideTextClass,
     .asideRestContainerEnglishAndHelp > .asideTextClass,
@@ -9,268 +8,175 @@
        display: none;
    } 
 
-   .asideSearchBarMediaQueryElement, .asideButtonGreyMediaQueryElement, .asideButtonGreenMediaQueryElement {
+    .asideSearchBarMediaQueryElement, .asideButtonGreyMediaQueryElement, .asideButtonGreenMediaQueryElement {
        display: block;
-   }
+    }
 
-  
-h1 {
-    font-size: 3.84vw;
-}
+    h1 {
+        font-size: 3.84vw;
+    }
 
-   .aside {
+    .aside {
        &FlexContainer {
-           display: block;
+            display: block;
             width: 3.15rem;
-       }
+        }
 
        &RestContainer{
-
-        &EnglishAndHelp {
-            width: 3.15rem;
-        }
-
-        &HelpHoverPositionContainer {
-        
-        }
-       }
+           &EnglishAndHelp {
+                width: 3.15rem;
+            }
+        }   
        
-       
-
        &SingleDivContainer {
             &Hover {
                 left: 3.15rem;
             }
-       }
+        }
    }
 
    .section {
-
-    &Container {
-        margin-left: 3.15rem;
-    }
-
-    
-    
-    &Top {
-        &LeftPart {
-            width: 38.4vw;
-            min-width: calc(0.5 * 768px);
-
-            
+        &Container {
+            margin-left: 3.15rem;
         }
-        &RightPart {
-            width: 37.6vw;
-            min-width: calc(0.5 * 768px);
-            margin-left: 4vw;
-
-            &Horizontal {
-
-                & .sectionTopRightPartFont {
-                    width: 16vw;
-                    min-width: 150px;
-                    margin-top: -90px;
-                    
-                }
-
-                & .sectionTopRightPartFont:nth-of-type(2) {
-                    margin-left: 3.2vw;
-                }
+        &Top {
+            &LeftPart {
+                width: 38.4vw;
+                min-width: calc(0.5 * 768px);
             }
 
-            &GreenButton {
-                width: 34vw;
-                
-            }
+            &RightPart {
+                width: 37.6vw;
+                min-width: calc(0.5 * 768px);
+                margin-left: 4vw;
 
-            &GreyButton {
-                width: 34vw;
-               
-            }
-        }
-    }
+                &Horizontal {
+                    & .sectionTopRightPartFont {
+                        width: 16vw;
+                        min-width: 150px;
+                        margin-top: -90px;
+                    }
 
-    &Second {
-        &LeftPart {
-            width: calc(0.55 * 84vw);
-            // min-width: calc(0.55 * 768px);
-            
-
-            &Vertical {
-                width: 18vw;
-                
-            }
-
-            &Font {
-                &First {
-                   
-                 
-                }
-                &Second {
-                    
-                }
-                &Third {
-                    
-                }
-
-                &Button {
-                    
-                }
-            }
-
-            &Quote {
-                
-                &Image {
-                    margin-left: 4vw;
-                    margin-right: 4vw;
-                 
-                    & > img {
-                       
+                    & .sectionTopRightPartFont:nth-of-type(2) {
+                        margin-left: 3.2vw;
                     }
                 }
-            }
-            &Bottom {
-                
-            }
 
-            
-        }
+                &GreenButton {
+                    width: 34vw;
+                }
 
-        &RightPart {
-            width: calc(0.45 * 84vw);
-            min-width: calc(0.6 * 768px);
-
-            &Vertical {
-                // width: 24vw;
-                // min-width: 250px;
-            }
-
-            & img {
-            //     width: 34vw;
-            //     height: 34vw;
-            //     min-width: 300px;
-            //     min-height: 300px;
-            }
-        }
-    }
-
-    &Third {
-
-        &LeftPart {
-            width: calc(0.45 * 84vw);
-            min-width: calc(0.6 * 768px);
-
-            & img {
-                // width: 34vw;
-                // height: 34vw;
-                // min-width: 300px;
-                // min-height: 300px;
+                &GreyButton {
+                    width: 34vw;
+                }
             }
         }
 
-        &RightPart {
+        &Second {
+            &LeftPart {
+                width: calc(0.55 * 84vw);
 
+                &Vertical {
+                    width: 18vw;
+                }
 
-            width: calc(0.55 * 84vw);
-            min-width: calc(0.4 * 768px);
-
-            &Vertical {
-                width: 18vw;
-                
+                &Quote {
+                    &Image {
+                        margin-left: 4vw;
+                        margin-right: 4vw;
+                    }
+                }   
             }
 
-            &Quote {
-                
-                &Image {
-                    margin-left: 4vw;
-                    margin-right: 4vw;
-                 
-                    & > img {
-                     
+            &RightPart {
+                width: calc(0.45 * 84vw);
+                min-width: calc(0.6 * 768px);
+            }
+        }
+
+        &Third {
+            &LeftPart {
+                width: calc(0.45 * 84vw);
+                min-width: calc(0.6 * 768px);
+            }
+
+            &RightPart {
+                width: calc(0.55 * 84vw);
+                min-width: calc(0.4 * 768px);
+
+                &Vertical {
+                    width: 18vw;  
+                }
+
+                &Quote {
+                    &Image {
+                        margin-left: 4vw;
+                        margin-right: 4vw;
                     }
                 }
             }
         }
-    }
 
-
-
-
-
-
-
-
-    
-    &Fourth {
-
-        &VerticalContainer {
-            width: calc(0.5 * 84vw);
-            min-width: calc(0.5 * 768px);
-        }
-
-        &Button {
-            &Container {
-                margin-left: 3.15rem;
+        &Fourth {
+            &VerticalContainer {
+                width: calc(0.5 * 84vw);
+                min-width: calc(0.5 * 768px);
             }
-    }
 
+            &Button {
+                &Container {
+                    margin-left: 3.15rem;
+                }
+            }
+        }
+    }
 
     #sectionFourthH2 {
         margin-left: 3.15rem;
     }
-   }
-}
 
-.chessBoard {
-    &GridContainer {
-        display: grid;
-        grid-template-columns: repeat(8, 5.05vw);
-        grid-template-rows: repeat(8, 5.05vw);
-        // grid-template-columns: repeat(8, 55px);
-        // grid-template-rows: repeat(8, 55px);
-    }
-}
-
-#sectionFourthH2 {
-margin-left: 3.15rem;
-}
-
-.footer {
-    &CentralGeneralContainer {
-        margin-left: 3.15rem;
+    .chessBoard {
+        &GridContainer {
+            display: grid;
+            grid-template-columns: repeat(8, 5.05vw);
+            grid-template-rows: repeat(8, 5.05vw);
+        }
     }
 
-    &Extra {
-        
-        margin-left: 3.15rem;
-        
+    .footer {
+        &CentralGeneralContainer {
+            margin-left: 3.15rem;
+        }
+
+        &Extra {
+            
+            margin-left: 3.15rem;
+            
+        }
     }
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media  screen and (max-width: 960px) {
-    
+    .asideSingleDivContainer > .asideTextClass,
+    .asideRestContainerEnglishAndHelp > .asideTextClass,
+    .asideTextClassSpecial,
+    .asideSearchBar,
+    .asideButtonGrey,
+    .asideButtonGreen {
+       display: block;
+   }
+
+   .asideSearchBarMediaQueryElement, .asideButtonGreyMediaQueryElement, .asideButtonGreenMediaQueryElement {
+    display: none;
+    }
+
+    .asideSmallMediaQuery {
+        display: flex;
+    }
+
     h1 {
         font-size: 36.864px;
     }
-
-
 
     #closeAsideBar {
         display: block;
@@ -281,44 +187,22 @@ margin-left: 3.15rem;
             display: none;
             width: 9rem;
         }
+
         &SingleDivContainer {
             &Hover {
                 width: 100%;
                 left: 9rem;
             }
        }
+
        &ClosingSymbol {
            display: block;
        }
     }
 
-    
-#asideSpecialIcon, #asideSpecialFont {
-    display: none;
-}
-
-    .asideSingleDivContainer > .asideTextClass,
-    .asideRestContainerEnglishAndHelp > .asideTextClass,
-    .asideTextClassSpecial,
-    .asideSearchBar,
-    .asideButtonGrey,
-    .asideButtonGreen {
-       display: block;
-   } 
-
-   .asideSearchBarMediaQueryElement, .asideButtonGreyMediaQueryElement, .asideButtonGreenMediaQueryElement {
-    display: none;
-}
-
-.asideSmallMediaQuery {
-    display: flex;
-}
-
-
-
-
-
-
+    #asideSpecialIcon, #asideSpecialFont {
+        display: none;
+    }
 
     .chessBoard {
         &GridContainer {
@@ -328,17 +212,11 @@ margin-left: 3.15rem;
         }
     }
 
-
-
-
-
-
     .section {
         &Container {
             margin-left: 0;
         }
-     
-
+    
         &Top {
             &LeftPart {
                 width: calc(8 * 46.08px);
@@ -347,75 +225,20 @@ margin-left: 3.15rem;
 
             &RightPart {
                 min-width: 350px;
-                // width: 400px;
-                
-
-                &GreenButton {
-                 
-                    
-                }
-
-                &GreyButton {
-                   
-                 
-
-                }
-
+  
                 &Horizontal {
-
                     & .sectionTopRightPartFont {
                         width: 150px;
                         margin-top: -90px;
-                        
-                    }
-    
-                    & .sectionTopRightPartFont:nth-of-type(2) {
-                        // margin-left: 20px;
                     }
                 }
             }
         }
 
-
-
-
         &Third {
-
-            &LeftPart {
-         
-    
-                & img {
-            
-                }
-            }
-    
             &RightPart {
-    
-                &Central {
-                    
-    
-                    &:nth-of-type(2) {
-                        // margin-bottom: 75px;
-                    }
-                }
-    
                 &Vertical {
-                    width: 14vw;
-                    
-                }
-    
-                &Quote {
-                    
-                    &Image {
-                        
-                        & > img {
-                         
-                        }
-                    }
-                }
-
-                &Bottom {
-                    // margin-bottom: 0;
+                    width: 14vw; 
                 }
             }
         }
@@ -425,64 +248,33 @@ margin-left: 3.15rem;
                 &Container {
                     margin-left: 0;
                 }
+            }
         }
-    
-     
-        
-    }
     }
 
     #sectionFourthH2 {
         margin-left: 0;
-        }
-    
-    
-    
+    }
     
     .footer {
         &CentralGeneralContainer {
             margin-left: 0;
         }
 
-        
-          
-        
-            &Extra {
-               
-                margin-left: 0;
-                
-            
+        &Extra {
+            margin-left: 0;
         }
     }
-
 }
 
-
-
-
-
-
-
-
-
-
-
 @media  screen and (max-width: 768px) {
-
     .aside {
         &RestContainer{
-
-            &EnglishAndHelp {
-                
-            }
-    
             &HelpHoverPositionContainer {
                 left: 275%;
             }
+        }
     }
-}
-
-
 
     .section {
         &Container {
@@ -493,48 +285,41 @@ margin-left: 3.15rem;
             height: auto;
             grid-template-columns: repeat(1, auto);
             grid-template-rows: auto auto;
-
-     
         }
+
         &Top {
             &LeftPart {
                 display: none;
             }
+
             &RightPart {
               margin-left: 0;
 
-              & > h1 {
-                  width: 90vw;
-              }
-
-              &Horizontal:nth-of-type(1) {
-                 flex-direction: column;
-                 margin-top: -50px;
-                 
-
-                 & .sectionTopRightPartFont:nth-of-type(2) {
-                    margin-left: 0;
-                    margin-top: 0.5vw;
-                    
-                    
+                & > h1 {
+                    width: 90vw;
                 }
 
-                & .sectionTopRightPartFont {
-                    width: 80vw;
+                &Horizontal:nth-of-type(1) {
+                    flex-direction: column;
+                    margin-top: -50px;
+                    
+                    & .sectionTopRightPartFont:nth-of-type(2) {
+                        margin-left: 0;
+                        margin-top: 0.5vw;
+                    }
+
+                    & .sectionTopRightPartFont {
+                        width: 80vw;
+                        margin: 0;
+                    }
+                }
+
+                &Horizontal:nth-of-type(2) {
                     margin: 0;
+                    margin-top: -1vw;
+                    margin-bottom: 5vw;
                 }
-                
-              }
-
-              &Horizontal:nth-of-type(2) {
-                margin: 0;
-                margin-top: -1vw;
-                margin-bottom: 5vw;
-              }
-         
-
-              
-
+            
                 &GreenButton {
                     width: 55vw;
                     
@@ -551,10 +336,8 @@ margin-left: 3.15rem;
                 background-color: transparent;
                 margin-top: -15vw;
                 width: 100%;
-
                 align-items: center;
                 
-
                 &FontFirst {
                     width: 100%;
                     height: auto;
@@ -571,7 +354,6 @@ margin-left: 3.15rem;
                     margin: 0;
                     padding: 0;
                     
-
                     &Image {
                         margin: 0;
                         margin-right: 2vw;
@@ -592,131 +374,77 @@ margin-left: 3.15rem;
             }
         }
 
+        &Third {
+            &RightPart {
+                background-color: transparent;
+                margin-top: -925px;
+                width: 100%;
 
-&Third {
-    
-    &RightPart {
-        background-color: transparent;
-        margin-top: -925px;
-        width: 100%;
+                &FontFirst {
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+                    max-width: 100vw;
+                }
 
-        &FontFirst {
-            width: 100%;
-            height: auto;
-            margin: 0;
-            max-width: 100vw;
-        }
+                &GreenButton {
+                    display: none;
+                }
 
-        &GreenButton {
-            display: none;
-        }
+                &Quote {
+                    width: 450px;
+                    margin: 0;
+                    padding: 0;
 
-        &Quote {
-            width: 450px;
-            margin: 0;
-            padding: 0;
+                    &Image {
+                        margin: 0;
+                        margin-right: 15px;   
+                    }
+                }
 
-            &Image {
-                margin: 0;
-                margin-right: 15px;
-
-                
+                &Bottom {
+                    width: 100%;
+                    margin-top: -10vw;
+                    margin-bottom: 0;
+                }
             }
-            
+
+            &LeftPart {
+                width: 100%;
+                background-color: transparent;
+                position: relative;
+                top: 25%;  
+            }
         }
 
-        &Bottom {
-            width: 100%;
-            margin-top: -10vw;
-            margin-bottom: 0;
+        &Fourth {
+            &VerticalContainer {
+                width: 100%;
+            }
         }
-    }
-
-    &LeftPart {
-        width: 100%;
-        background-color: transparent;
-        position: relative;
-        top: 25%;  
-    }
-
-   
-
-
-    
         
-    
-    
-
-    
-
-  
-
-
-}
-
-&Fourth {
-
-    &VerticalContainer {
-      width: 100%;
+        #sectionFourthH2 {
+            margin-top: 150px;
+        }    
     }
-
-   
-
-
-#sectionFourthH2 {
-    
-}
-}
-    }
-
-    #sectionFourthH2 {
-        margin-top: 150px;
-    }
-
-
 
     .footer {
         &Extra {
             display: grid;
             grid-template-columns: repeat(2, auto);
             grid-template-rows: repeat(auto, auto);
-            
-        
-    }
+        }
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media  screen and (max-width: 480px) {
-
     .aside {
         &RestContainer{
-
-            &EnglishAndHelp {
-                
-            }
-    
             &HelpHoverPositionContainer {
                 left: 75%;
             }
+        }
     }
-}
 
     .section {
         &Container {
@@ -728,13 +456,11 @@ margin-left: 3.15rem;
             grid-template-columns: repeat(1, auto);
             grid-template-rows: auto auto;
         }
+
         &Top {
-            &LeftPart {
-
-            }
-
             &RightPart {
                 margin-top: 25px;
+
                 &GreenButton {
                     width: 264px;
                 }
@@ -744,172 +470,136 @@ margin-left: 3.15rem;
                 }
 
                 &Horizontal {
-
                     & .sectionTopRightPartFont {
                         width: 100px;
                         margin-top: -90px;
-                        
                     }
-    
-                   
                 }
             }
-    
-
-}
-
-&Second {
-    &LeftPart {
-        
-        
-
-        &Horizontal {
-            flex-direction: column;
         }
 
-        &Quote {
-            width: 80vw;
-            align-self: center;
+        &Second {
+            &LeftPart {
+                &Horizontal {
+                    flex-direction: column;
+                }
 
-            &Image {
-                margin: 0;
-                margin-bottom: 10px;
+                &Quote {
+                    width: 80vw;
+                    align-self: center;
+
+                    &Image {
+                        margin: 0;
+                        margin-bottom: 10px;
+                    }
+
+                    &Name {
+                        margin: 0;
+                        align-self: center;
+                        margin-top: 10px;
+                    }
+                }
+
+                &FontThird {
+                    margin: 0;
+                    align-self: center;
+                }
             }
 
-            &Name {
-                margin: 0;
-                align-self: center;
-                margin-top: 10px;
+            &RightPart {
+                margin-top: -175px;
+
+                &Central {
+                    & img {
+                        width: 250px;
+                        height: auto;
+                    }
+                } 
             }
         }
 
-        &FontThird {
-            margin: 0;
-            align-self: center;
+        &Third {
+            &RightPart {
+                &Central {
+                    margin-top: -25px;
+
+                    & > .sectionThirdRightPartFontFirst {
+                        margin-top: 50px;
+                    }
+                }
+
+                &Horizontal {
+                    flex-direction: column;
+                }
+
+                &Quote {
+                    width: 80vw;
+                    align-self: center;
+
+                    &Image {
+                        margin: 0;
+                        margin-bottom: 10px;
+                    }
+
+                    &Name {
+                        margin: 0;
+                        align-self: center;
+                        margin-top: 10px;
+                    }
+                }
+
+                &FontThird {
+                    margin: 0;
+                    align-self: center;
+                }
+            }
+
+            &LeftPart {
+                top: 25%;  
+                margin-top: 25px;
+
+                &Central {
+                    margin: 0;
+
+                    & img {
+                        width: 250px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        &Fourth {
+            &VerticalContainer div, p {
+                width: 70vw;
+            }
+
+            &VerticalContainer {
+                height: 375px;
+
+                & > a > img {
+                    width: 95vw;
+                    height: 60vw;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 25px;
+                }
+            }
         }
     }
 
-    &RightPart {
-
-        &Central {
-            & img {
-                width: 250px;
-                height: auto;
-            }
-        }
-        margin-top: -175px;
+    #sectionFourthH2 {
+        margin-top: 50px;
     }
 
-}
-
-&Third {
-    &RightPart {
-
-        &Central {
-            margin-top: -25px;
-
-            & > .sectionThirdRightPartFontFirst {
-                margin-top: 50px;
-            }
-        }
-
-        &Horizontal {
-            flex-direction: column;
-        }
-
-        &Quote {
-            width: 80vw;
-            align-self: center;
-
-            &Image {
-                margin: 0;
-                margin-bottom: 10px;
-            }
-
-            &Name {
-                margin: 0;
-                align-self: center;
-                margin-top: 10px;
-            }
-        }
-
-        &FontThird {
-            margin: 0;
-            align-self: center;
-        }
-    }
-
-    &LeftPart {
-            top: 25%;  
-        
-        margin-top: 25px;
-
-        &Central {
-            margin: 0;
-            & img {
-                width: 250px;
-                height: auto;
-               
-            }
-        }
-    }
-
-}
-
-&Fourth {
-    &VerticalContainer div, p {
-        width: 70vw;
-    }
-
-    &VerticalContainer {
-        height: 375px;
-
-
-        & > a > img {
-            width: 95vw;
-            height: 60vw;
-        }
-
-        &:last-of-type {
-            margin-bottom: 25px;
+    .footer {
+        &Extra {
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+            grid-template-rows: repeat(auto, auto);
+            justify-content: center;
+            align-items: center;
         }
     }
 }
-}
-
-#sectionFourthH2 {
-    margin-top: 50px;
-}
-
-.footer {
-    &Extra {
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(auto, auto);
-        justify-content: center;
-        align-items: center;
-        
-    
-}
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
