@@ -13,3 +13,5 @@ In addition, I added some little JavaScript code to the main chessboard on the t
 
 The used sources (especially icons) can be found in the footer:
 https://matthes-baer.github.io/DesignCopyProject-Chess.com-/
+
+**Some pictures were made through screenshots. Due to this process especially the chessboard picture screenshots are lacking in quality.**
