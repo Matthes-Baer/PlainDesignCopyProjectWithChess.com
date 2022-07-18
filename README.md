@@ -12,6 +12,6 @@ The goal was not to create an exact copy but to use the chess.com landing page a
 In addition, I added some little JavaScript code to the main chessboard on the top (instead of an pure image I decided to work with a grid and added possible starting moves for the pawns as well as for the knights). I also made use of a small random Number generator for the "Games Today" and "Playing Now" categories at the top. Besides that, especially the responsive design has major differences in contrast to the original chess.com web page. 
 
 The used sources (especially icons) can be found in the footer:
-https://matthes-baer.github.io/DesignCopyProject-Chess.com-/
+https://matthes-baer.github.io/PlainDesignCopyProjectWithChess.com/
 
 **Some pictures were made through screenshots. Due to this process especially the chessboard picture screenshots are lacking in quality.**
