@@ -1,17 +1,29 @@
-# Description
-This project is an approach to **approximately** copy the design of https://www.chess.com/.
+# Project: <a href="https://matthes-baer.github.io/PlainDesignCopyProjectWithChess.com/" target="_blank">No Framework</a>
+This project marks my very first published web development endeavor, where I aimed to emulate the design of https://www.chess.com/. While it's an approximation, I strived to recreate the essence of the original website's layout and aesthetics.
 
-For the editing I didn't use any CSS framework. It was intended to be a first frontend challenge for which I had to work with my CSS knowledge in order to find fitting similar solutions instead of quickly achieving results using Bootstrap 5 or Tailwind CSS for example.
+## Tech Stack 📚
+<div style={flex-direction: row;}>
+  <img width="40" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" alt="JavaScript" title="JavaScript"/>
+  <img width="50" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" alt="HTML" title="HTML"/>
+  <img width="50" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png" alt="CSS" title="CSS/SCSS"/>
+  <img width="40" src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png" alt="Git" title="Git"/>
+</div>
 
-**Please also be aware that the original design has recently changed (especially at the navgiation bar) after I completed this project.**
+## About the Project 🔎
+For this project, I deliberately chose not to utilize any form of framework as I wanted to challenge myself with a raw approach and leverage my frontend knowledge to discover fitting and innovative solutions.
 
-## Distinctions from the original
-Due to the fact that I didn't copy any code through the console, some measurements are not identical with the ones from the original website (https://www.chess.com/) - same for the larger pictures which are just screenshots (and therefore don't have identical measurements as well). 
-The goal was not to create an exact copy but to use the chess.com landing page as design guide in order to see if I am able to provide the required pure HTML and CSS skills for a landing page which looks somewhat similar.
+Since I refrained from copying any code through the console, some measurements may not precisely match those of the original website. Similarly, the larger pictures are mere screenshots, resulting in slightly different dimensions. However, the main objective wasn't to create an exact replica, but rather to employ the chess.com landing page as a design guide and showcase my proficiency in providing the necessary pure HTML and CSS skills to craft a visually similar landing page.
 
-In addition, I added some little JavaScript code to the main chessboard on the top (instead of an pure image I decided to work with a grid and added possible starting moves for the pawns as well as for the knights). I also made use of a small random Number generator for the "Games Today" and "Playing Now" categories at the top. Besides that, especially the responsive design has major differences in contrast to the original chess.com web page. 
+Additionally, I incorporated a touch of JavaScript into the main chessboard at the top. Instead of using a static image, I created a dynamic grid with possible starting moves for the pawns and knights. Moreover, I implemented a small random number generator for the "Games Today" and "Playing Now" categories at the top.
 
-The used sources (especially icons) can be found in the footer:
-https://matthes-baer.github.io/PlainDesignCopyProjectWithChess.com/
+For the project's elements, including icons, I have credited the sources in the footer.
 
-**Some pictures were made through screenshots. Due to this process especially the chessboard picture screenshots are lacking in quality.**
+## Additional Information ❗
+- Please note that the responsive design of my project may differ significantly from the original chess.com webpage.
+- Kindly be aware that the original design of chess.com has undergone recent changes, particularly in the navigation bar, which occurred after the completion of this project.
+- Some images were captured through screenshots to preserve the actual state of the original website. However, due to this process, especially the quality of the chessboard picture screenshots might be compromised.
+
+## Installation 🔨
+To set up the project locally, follow these steps:
+1. Clone the repository: `git clone https://github.com/Matthes-Baer/PlainDesignCopyProjectWithChess.com.git`
+2. Open the index.html file in the project's root.
